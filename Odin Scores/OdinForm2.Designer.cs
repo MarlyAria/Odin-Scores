@@ -32,8 +32,6 @@
             this.Player2radioButton = new System.Windows.Forms.RadioButton();
             this.Player3radioButton = new System.Windows.Forms.RadioButton();
             this.Player4radioButton = new System.Windows.Forms.RadioButton();
-            this.ScoreButton = new System.Windows.Forms.Button();
-            this.labelWatTeDoen = new System.Windows.Forms.Label();
             this.labelShips = new System.Windows.Forms.Label();
             this.labelEmigration = new System.Windows.Forms.Label();
             this.labelExplorationBoardP = new System.Windows.Forms.Label();
@@ -61,7 +59,6 @@
             this.ExplorationBoardsNBoxP4 = new System.Windows.Forms.TextBox();
             this.ShedsHousesNBoxP4 = new System.Windows.Forms.TextBox();
             this.ThingPenaltyBoxP4 = new System.Windows.Forms.TextBox();
-            this.pictureBoxForm = new System.Windows.Forms.PictureBox();
             this.EnglishCrownBoxP4 = new System.Windows.Forms.CheckBox();
             this.labelPlayerSelect = new System.Windows.Forms.Label();
             this.Player4Colour = new System.Windows.Forms.ComboBox();
@@ -74,14 +71,10 @@
             this.Player1Text = new System.Windows.Forms.TextBox();
             this.PlayerNumberBox = new System.Windows.Forms.ComboBox();
             this.PlayerNumberLabel = new System.Windows.Forms.Label();
-            this.StartButton = new System.Windows.Forms.Button();
-            this.pictureBoxPlayers = new System.Windows.Forms.PictureBox();
-            this.pictureBoxRadioButtons = new System.Windows.Forms.PictureBox();
             this.Player1EndscoreLabel = new System.Windows.Forms.Label();
             this.Player2EndscoreLabel = new System.Windows.Forms.Label();
             this.Player3EndscoreLabel = new System.Windows.Forms.Label();
             this.Player4EndscoreLabel = new System.Windows.Forms.Label();
-            this.pictureBoxEndscore = new System.Windows.Forms.PictureBox();
             this.ShipsBoxP3 = new System.Windows.Forms.TextBox();
             this.EmigrationBoxP3 = new System.Windows.Forms.TextBox();
             this.ExplorationBoardsPBoxP3 = new System.Windows.Forms.TextBox();
@@ -121,9 +114,18 @@
             this.ShedsHousesNBoxP1 = new System.Windows.Forms.TextBox();
             this.ThingPenaltyBoxP1 = new System.Windows.Forms.TextBox();
             this.EnglishCrownBoxP1 = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).BeginInit();
+            this.pictureBoxPlayers = new System.Windows.Forms.PictureBox();
+            this.StartButton = new System.Windows.Forms.Button();
+            this.pictureBoxForm = new System.Windows.Forms.PictureBox();
+            this.ScoreButton = new System.Windows.Forms.Button();
+            this.pictureBoxRadioButtons = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxEndscore = new System.Windows.Forms.PictureBox();
+            this.labelWatTeDoen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlayers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRadioButtons)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEndscore)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,10 +133,11 @@
             // 
             this.Player1radioButton.AutoSize = true;
             this.Player1radioButton.BackColor = System.Drawing.Color.White;
-            this.Player1radioButton.Location = new System.Drawing.Point(59, 41);
+            this.Player1radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1radioButton.Location = new System.Drawing.Point(60, 40);
             this.Player1radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player1radioButton.Name = "Player1radioButton";
-            this.Player1radioButton.Size = new System.Drawing.Size(81, 21);
+            this.Player1radioButton.Size = new System.Drawing.Size(93, 22);
             this.Player1radioButton.TabIndex = 0;
             this.Player1radioButton.TabStop = true;
             this.Player1radioButton.Text = "Player 1";
@@ -145,10 +148,11 @@
             // 
             this.Player2radioButton.AutoSize = true;
             this.Player2radioButton.BackColor = System.Drawing.Color.White;
-            this.Player2radioButton.Location = new System.Drawing.Point(59, 87);
+            this.Player2radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2radioButton.Location = new System.Drawing.Point(60, 85);
             this.Player2radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player2radioButton.Name = "Player2radioButton";
-            this.Player2radioButton.Size = new System.Drawing.Size(81, 21);
+            this.Player2radioButton.Size = new System.Drawing.Size(94, 22);
             this.Player2radioButton.TabIndex = 1;
             this.Player2radioButton.TabStop = true;
             this.Player2radioButton.Text = "Player 2";
@@ -159,10 +163,11 @@
             // 
             this.Player3radioButton.AutoSize = true;
             this.Player3radioButton.BackColor = System.Drawing.Color.White;
-            this.Player3radioButton.Location = new System.Drawing.Point(301, 41);
+            this.Player3radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3radioButton.Location = new System.Drawing.Point(300, 40);
             this.Player3radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player3radioButton.Name = "Player3radioButton";
-            this.Player3radioButton.Size = new System.Drawing.Size(81, 21);
+            this.Player3radioButton.Size = new System.Drawing.Size(94, 22);
             this.Player3radioButton.TabIndex = 2;
             this.Player3radioButton.TabStop = true;
             this.Player3radioButton.Text = "Player 3";
@@ -173,178 +178,170 @@
             // 
             this.Player4radioButton.AutoSize = true;
             this.Player4radioButton.BackColor = System.Drawing.Color.White;
-            this.Player4radioButton.Location = new System.Drawing.Point(301, 87);
+            this.Player4radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4radioButton.Location = new System.Drawing.Point(300, 85);
             this.Player4radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4radioButton.Name = "Player4radioButton";
-            this.Player4radioButton.Size = new System.Drawing.Size(81, 21);
+            this.Player4radioButton.Size = new System.Drawing.Size(95, 22);
             this.Player4radioButton.TabIndex = 3;
             this.Player4radioButton.TabStop = true;
             this.Player4radioButton.Text = "Player 4";
             this.Player4radioButton.UseVisualStyleBackColor = false;
             this.Player4radioButton.CheckedChanged += new System.EventHandler(this.Player4radioButton_Checked);
             // 
-            // ScoreButton
-            // 
-            this.ScoreButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
-            this.ScoreButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ScoreButton.Location = new System.Drawing.Point(454, 28);
-            this.ScoreButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ScoreButton.Name = "ScoreButton";
-            this.ScoreButton.Size = new System.Drawing.Size(221, 132);
-            this.ScoreButton.TabIndex = 4;
-            this.ScoreButton.UseVisualStyleBackColor = true;
-            this.ScoreButton.Click += new System.EventHandler(this.ScoreButton_Click);
-            // 
-            // labelWatTeDoen
-            // 
-            this.labelWatTeDoen.AutoSize = true;
-            this.labelWatTeDoen.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.labelWatTeDoen.Location = new System.Drawing.Point(32, 146);
-            this.labelWatTeDoen.Name = "labelWatTeDoen";
-            this.labelWatTeDoen.Size = new System.Drawing.Size(371, 17);
-            this.labelWatTeDoen.TabIndex = 5;
-            this.labelWatTeDoen.Text = "Selected the player and then enter his scores in each box";
-            // 
             // labelShips
             // 
             this.labelShips.AutoSize = true;
-            this.labelShips.Location = new System.Drawing.Point(23, 284);
+            this.labelShips.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShips.Location = new System.Drawing.Point(25, 290);
             this.labelShips.Name = "labelShips";
-            this.labelShips.Size = new System.Drawing.Size(43, 17);
+            this.labelShips.Size = new System.Drawing.Size(58, 21);
             this.labelShips.TabIndex = 6;
             this.labelShips.Text = "Ships";
             // 
             // labelEmigration
             // 
             this.labelEmigration.AutoSize = true;
-            this.labelEmigration.Location = new System.Drawing.Point(23, 313);
+            this.labelEmigration.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEmigration.Location = new System.Drawing.Point(25, 325);
             this.labelEmigration.Name = "labelEmigration";
-            this.labelEmigration.Size = new System.Drawing.Size(75, 17);
+            this.labelEmigration.Size = new System.Drawing.Size(113, 21);
             this.labelEmigration.TabIndex = 7;
             this.labelEmigration.Text = "Emigration";
             // 
             // labelExplorationBoardP
             // 
             this.labelExplorationBoardP.AutoSize = true;
-            this.labelExplorationBoardP.Location = new System.Drawing.Point(23, 342);
+            this.labelExplorationBoardP.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExplorationBoardP.Location = new System.Drawing.Point(25, 360);
             this.labelExplorationBoardP.Name = "labelExplorationBoardP";
-            this.labelExplorationBoardP.Size = new System.Drawing.Size(127, 17);
+            this.labelExplorationBoardP.Size = new System.Drawing.Size(194, 21);
             this.labelExplorationBoardP.TabIndex = 8;
             this.labelExplorationBoardP.Text = "Exploration Boards";
             // 
             // labelShedsHousesP
             // 
             this.labelShedsHousesP.AutoSize = true;
-            this.labelShedsHousesP.Location = new System.Drawing.Point(23, 372);
+            this.labelShedsHousesP.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShedsHousesP.Location = new System.Drawing.Point(25, 395);
             this.labelShedsHousesP.Name = "labelShedsHousesP";
-            this.labelShedsHousesP.Size = new System.Drawing.Size(128, 17);
+            this.labelShedsHousesP.Size = new System.Drawing.Size(167, 21);
             this.labelShedsHousesP.TabIndex = 9;
             this.labelShedsHousesP.Text = "Sheds and Houses";
             // 
             // labelSheepCattle
             // 
             this.labelSheepCattle.AutoSize = true;
-            this.labelSheepCattle.Location = new System.Drawing.Point(23, 398);
+            this.labelSheepCattle.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSheepCattle.Location = new System.Drawing.Point(25, 430);
             this.labelSheepCattle.Name = "labelSheepCattle";
-            this.labelSheepCattle.Size = new System.Drawing.Size(117, 17);
+            this.labelSheepCattle.Size = new System.Drawing.Size(159, 21);
             this.labelSheepCattle.TabIndex = 10;
             this.labelSheepCattle.Text = "Sheep and Cattle";
             // 
             // labelOccupations
             // 
             this.labelOccupations.AutoSize = true;
-            this.labelOccupations.Location = new System.Drawing.Point(23, 427);
+            this.labelOccupations.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOccupations.Location = new System.Drawing.Point(25, 465);
             this.labelOccupations.Name = "labelOccupations";
-            this.labelOccupations.Size = new System.Drawing.Size(87, 17);
+            this.labelOccupations.Size = new System.Drawing.Size(123, 21);
             this.labelOccupations.TabIndex = 11;
             this.labelOccupations.Text = "Occupations";
             // 
             // labelSilver
             // 
             this.labelSilver.AutoSize = true;
-            this.labelSilver.Location = new System.Drawing.Point(23, 455);
+            this.labelSilver.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSilver.Location = new System.Drawing.Point(25, 500);
             this.labelSilver.Name = "labelSilver";
-            this.labelSilver.Size = new System.Drawing.Size(43, 17);
+            this.labelSilver.Size = new System.Drawing.Size(66, 21);
             this.labelSilver.TabIndex = 12;
             this.labelSilver.Text = "Silver";
             // 
             // labelFinalIncome
             // 
             this.labelFinalIncome.AutoSize = true;
-            this.labelFinalIncome.Location = new System.Drawing.Point(23, 482);
+            this.labelFinalIncome.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFinalIncome.Location = new System.Drawing.Point(25, 535);
             this.labelFinalIncome.Name = "labelFinalIncome";
-            this.labelFinalIncome.Size = new System.Drawing.Size(87, 17);
+            this.labelFinalIncome.Size = new System.Drawing.Size(121, 21);
             this.labelFinalIncome.TabIndex = 13;
             this.labelFinalIncome.Text = "Final Income";
             // 
             // labelEnglishCrown
             // 
             this.labelEnglishCrown.AutoSize = true;
-            this.labelEnglishCrown.Location = new System.Drawing.Point(23, 513);
+            this.labelEnglishCrown.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEnglishCrown.Location = new System.Drawing.Point(25, 570);
             this.labelEnglishCrown.Name = "labelEnglishCrown";
-            this.labelEnglishCrown.Size = new System.Drawing.Size(97, 17);
+            this.labelEnglishCrown.Size = new System.Drawing.Size(145, 21);
             this.labelEnglishCrown.TabIndex = 14;
             this.labelEnglishCrown.Text = "English Crown";
             // 
             // labelPositivePoints
             // 
             this.labelPositivePoints.AutoSize = true;
-            this.labelPositivePoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPositivePoints.Location = new System.Drawing.Point(21, 223);
+            this.labelPositivePoints.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPositivePoints.Location = new System.Drawing.Point(25, 225);
             this.labelPositivePoints.Name = "labelPositivePoints";
-            this.labelPositivePoints.Size = new System.Drawing.Size(171, 29);
+            this.labelPositivePoints.Size = new System.Drawing.Size(248, 35);
             this.labelPositivePoints.TabIndex = 15;
             this.labelPositivePoints.Text = "Positive Points";
             // 
             // labelNegativepoints
             // 
             this.labelNegativepoints.AutoSize = true;
-            this.labelNegativepoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNegativepoints.Location = new System.Drawing.Point(385, 223);
+            this.labelNegativepoints.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNegativepoints.Location = new System.Drawing.Point(385, 225);
             this.labelNegativepoints.Name = "labelNegativepoints";
-            this.labelNegativepoints.Size = new System.Drawing.Size(182, 29);
+            this.labelNegativepoints.Size = new System.Drawing.Size(255, 35);
             this.labelNegativepoints.TabIndex = 16;
             this.labelNegativepoints.Text = "Negative Points";
             // 
             // labelHomeBoard
             // 
             this.labelHomeBoard.AutoSize = true;
-            this.labelHomeBoard.Location = new System.Drawing.Point(387, 284);
+            this.labelHomeBoard.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHomeBoard.Location = new System.Drawing.Point(387, 291);
             this.labelHomeBoard.Name = "labelHomeBoard";
-            this.labelHomeBoard.Size = new System.Drawing.Size(87, 17);
+            this.labelHomeBoard.Size = new System.Drawing.Size(120, 21);
             this.labelHomeBoard.TabIndex = 17;
             this.labelHomeBoard.Text = "Home Board";
             // 
             // labelExplorationBoardN
             // 
             this.labelExplorationBoardN.AutoSize = true;
-            this.labelExplorationBoardN.Location = new System.Drawing.Point(387, 313);
+            this.labelExplorationBoardN.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExplorationBoardN.Location = new System.Drawing.Point(385, 325);
             this.labelExplorationBoardN.Name = "labelExplorationBoardN";
-            this.labelExplorationBoardN.Size = new System.Drawing.Size(127, 17);
+            this.labelExplorationBoardN.Size = new System.Drawing.Size(194, 21);
             this.labelExplorationBoardN.TabIndex = 18;
             this.labelExplorationBoardN.Text = "Exploration Boards";
             // 
             // labelShedsHousesN
             // 
             this.labelShedsHousesN.AutoSize = true;
-            this.labelShedsHousesN.Location = new System.Drawing.Point(387, 340);
+            this.labelShedsHousesN.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShedsHousesN.Location = new System.Drawing.Point(385, 360);
             this.labelShedsHousesN.Name = "labelShedsHousesN";
-            this.labelShedsHousesN.Size = new System.Drawing.Size(128, 17);
+            this.labelShedsHousesN.Size = new System.Drawing.Size(167, 21);
             this.labelShedsHousesN.TabIndex = 19;
             this.labelShedsHousesN.Text = "Sheds and Houses";
             // 
             // labelThingPenalty
             // 
             this.labelThingPenalty.AutoSize = true;
-            this.labelThingPenalty.Location = new System.Drawing.Point(387, 370);
+            this.labelThingPenalty.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelThingPenalty.Location = new System.Drawing.Point(385, 395);
             this.labelThingPenalty.Name = "labelThingPenalty";
-            this.labelThingPenalty.Size = new System.Drawing.Size(95, 17);
+            this.labelThingPenalty.Size = new System.Drawing.Size(137, 21);
             this.labelThingPenalty.TabIndex = 20;
             this.labelThingPenalty.Text = "Thing Penalty";
             // 
             // ShipsBoxP4
             // 
-            this.ShipsBoxP4.Location = new System.Drawing.Point(197, 279);
+            this.ShipsBoxP4.Location = new System.Drawing.Point(250, 290);
             this.ShipsBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShipsBoxP4.Name = "ShipsBoxP4";
             this.ShipsBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -353,7 +350,7 @@
             // 
             // EmigrationBoxP4
             // 
-            this.EmigrationBoxP4.Location = new System.Drawing.Point(196, 308);
+            this.EmigrationBoxP4.Location = new System.Drawing.Point(250, 325);
             this.EmigrationBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmigrationBoxP4.Name = "EmigrationBoxP4";
             this.EmigrationBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -362,7 +359,7 @@
             // 
             // ExplorationBoardsPBoxP4
             // 
-            this.ExplorationBoardsPBoxP4.Location = new System.Drawing.Point(197, 339);
+            this.ExplorationBoardsPBoxP4.Location = new System.Drawing.Point(250, 360);
             this.ExplorationBoardsPBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsPBoxP4.Name = "ExplorationBoardsPBoxP4";
             this.ExplorationBoardsPBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -371,16 +368,16 @@
             // 
             // ShedsHousesPBoxP4
             // 
-            this.ShedsHousesPBoxP4.Location = new System.Drawing.Point(197, 367);
+            this.ShedsHousesPBoxP4.Location = new System.Drawing.Point(250, 395);
             this.ShedsHousesPBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesPBoxP4.Name = "ShedsHousesPBoxP4";
             this.ShedsHousesPBoxP4.Size = new System.Drawing.Size(100, 22);
-            this.ShedsHousesPBoxP4.TabIndex = 23;
+            this.ShedsHousesPBoxP4.TabIndex = 28;
             this.ShedsHousesPBoxP4.TextChanged += new System.EventHandler(this.ShedsHousesPBoxP4_TextChanged);
             // 
             // SheepCattleBoxP4
             // 
-            this.SheepCattleBoxP4.Location = new System.Drawing.Point(197, 395);
+            this.SheepCattleBoxP4.Location = new System.Drawing.Point(250, 430);
             this.SheepCattleBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SheepCattleBoxP4.Name = "SheepCattleBoxP4";
             this.SheepCattleBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -389,7 +386,7 @@
             // 
             // OccupationsBoxP4
             // 
-            this.OccupationsBoxP4.Location = new System.Drawing.Point(196, 423);
+            this.OccupationsBoxP4.Location = new System.Drawing.Point(250, 465);
             this.OccupationsBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OccupationsBoxP4.Name = "OccupationsBoxP4";
             this.OccupationsBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -398,7 +395,7 @@
             // 
             // SilverBoxP4
             // 
-            this.SilverBoxP4.Location = new System.Drawing.Point(196, 452);
+            this.SilverBoxP4.Location = new System.Drawing.Point(250, 500);
             this.SilverBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SilverBoxP4.Name = "SilverBoxP4";
             this.SilverBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -407,7 +404,7 @@
             // 
             // FinalIncomeBoxP4
             // 
-            this.FinalIncomeBoxP4.Location = new System.Drawing.Point(197, 480);
+            this.FinalIncomeBoxP4.Location = new System.Drawing.Point(250, 535);
             this.FinalIncomeBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FinalIncomeBoxP4.Name = "FinalIncomeBoxP4";
             this.FinalIncomeBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -416,7 +413,7 @@
             // 
             // HomeBoardBoxP4
             // 
-            this.HomeBoardBoxP4.Location = new System.Drawing.Point(552, 277);
+            this.HomeBoardBoxP4.Location = new System.Drawing.Point(610, 290);
             this.HomeBoardBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBoardBoxP4.Name = "HomeBoardBoxP4";
             this.HomeBoardBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -425,7 +422,7 @@
             // 
             // ExplorationBoardsNBoxP4
             // 
-            this.ExplorationBoardsNBoxP4.Location = new System.Drawing.Point(552, 308);
+            this.ExplorationBoardsNBoxP4.Location = new System.Drawing.Point(610, 325);
             this.ExplorationBoardsNBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsNBoxP4.Name = "ExplorationBoardsNBoxP4";
             this.ExplorationBoardsNBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -434,7 +431,7 @@
             // 
             // ShedsHousesNBoxP4
             // 
-            this.ShedsHousesNBoxP4.Location = new System.Drawing.Point(552, 337);
+            this.ShedsHousesNBoxP4.Location = new System.Drawing.Point(610, 360);
             this.ShedsHousesNBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesNBoxP4.Name = "ShedsHousesNBoxP4";
             this.ShedsHousesNBoxP4.Size = new System.Drawing.Size(100, 22);
@@ -443,27 +440,17 @@
             // 
             // ThingPenaltyBoxP4
             // 
-            this.ThingPenaltyBoxP4.Location = new System.Drawing.Point(552, 367);
+            this.ThingPenaltyBoxP4.Location = new System.Drawing.Point(610, 395);
             this.ThingPenaltyBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ThingPenaltyBoxP4.Name = "ThingPenaltyBoxP4";
             this.ThingPenaltyBoxP4.Size = new System.Drawing.Size(100, 22);
             this.ThingPenaltyBoxP4.TabIndex = 32;
             this.ThingPenaltyBoxP4.TextChanged += new System.EventHandler(this.ThingPenaltyBoxP4_TextChanged);
             // 
-            // pictureBoxForm
-            // 
-            this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxForm.Location = new System.Drawing.Point(3, 13);
-            this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxForm.Name = "pictureBoxForm";
-            this.pictureBoxForm.Size = new System.Drawing.Size(719, 615);
-            this.pictureBoxForm.TabIndex = 33;
-            this.pictureBoxForm.TabStop = false;
-            // 
             // EnglishCrownBoxP4
             // 
             this.EnglishCrownBoxP4.AutoSize = true;
-            this.EnglishCrownBoxP4.Location = new System.Drawing.Point(199, 508);
+            this.EnglishCrownBoxP4.Location = new System.Drawing.Point(250, 574);
             this.EnglishCrownBoxP4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EnglishCrownBoxP4.Name = "EnglishCrownBoxP4";
             this.EnglishCrownBoxP4.Size = new System.Drawing.Size(18, 17);
@@ -474,9 +461,10 @@
             // labelPlayerSelect
             // 
             this.labelPlayerSelect.AutoSize = true;
-            this.labelPlayerSelect.Location = new System.Drawing.Point(118, 206);
+            this.labelPlayerSelect.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPlayerSelect.Location = new System.Drawing.Point(95, 204);
             this.labelPlayerSelect.Name = "labelPlayerSelect";
-            this.labelPlayerSelect.Size = new System.Drawing.Size(449, 17);
+            this.labelPlayerSelect.Size = new System.Drawing.Size(655, 21);
             this.labelPlayerSelect.TabIndex = 45;
             this.labelPlayerSelect.Text = "Enter the names of your players and click on the dice to start feasting.";
             // 
@@ -488,7 +476,7 @@
             "Blue",
             "Red",
             "Yellow"});
-            this.Player4Colour.Location = new System.Drawing.Point(429, 370);
+            this.Player4Colour.Location = new System.Drawing.Point(562, 427);
             this.Player4Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4Colour.Name = "Player4Colour";
             this.Player4Colour.Size = new System.Drawing.Size(117, 24);
@@ -497,7 +485,7 @@
             // 
             // Player4Text
             // 
-            this.Player4Text.Location = new System.Drawing.Point(130, 372);
+            this.Player4Text.Location = new System.Drawing.Point(169, 429);
             this.Player4Text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4Text.Name = "Player4Text";
             this.Player4Text.Size = new System.Drawing.Size(283, 22);
@@ -513,7 +501,7 @@
             "Blue",
             "Red",
             "Yellow"});
-            this.Player3Colour.Location = new System.Drawing.Point(429, 333);
+            this.Player3Colour.Location = new System.Drawing.Point(562, 370);
             this.Player3Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player3Colour.Name = "Player3Colour";
             this.Player3Colour.Size = new System.Drawing.Size(117, 24);
@@ -522,7 +510,7 @@
             // 
             // Player3Text
             // 
-            this.Player3Text.Location = new System.Drawing.Point(130, 335);
+            this.Player3Text.Location = new System.Drawing.Point(169, 371);
             this.Player3Text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player3Text.Name = "Player3Text";
             this.Player3Text.Size = new System.Drawing.Size(283, 22);
@@ -538,7 +526,7 @@
             "Blue",
             "Red",
             "Yellow"});
-            this.Player2Colour.Location = new System.Drawing.Point(429, 290);
+            this.Player2Colour.Location = new System.Drawing.Point(562, 322);
             this.Player2Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player2Colour.Name = "Player2Colour";
             this.Player2Colour.Size = new System.Drawing.Size(117, 24);
@@ -547,7 +535,7 @@
             // 
             // Player2Text
             // 
-            this.Player2Text.Location = new System.Drawing.Point(130, 292);
+            this.Player2Text.Location = new System.Drawing.Point(169, 318);
             this.Player2Text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player2Text.Name = "Player2Text";
             this.Player2Text.Size = new System.Drawing.Size(283, 22);
@@ -563,7 +551,7 @@
             "Blue",
             "Red",
             "Yellow"});
-            this.Player1Colour.Location = new System.Drawing.Point(429, 251);
+            this.Player1Colour.Location = new System.Drawing.Point(562, 267);
             this.Player1Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player1Colour.Name = "Player1Colour";
             this.Player1Colour.Size = new System.Drawing.Size(117, 24);
@@ -572,7 +560,7 @@
             // 
             // Player1Text
             // 
-            this.Player1Text.Location = new System.Drawing.Point(130, 253);
+            this.Player1Text.Location = new System.Drawing.Point(169, 267);
             this.Player1Text.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player1Text.Name = "Player1Text";
             this.Player1Text.Size = new System.Drawing.Size(283, 22);
@@ -589,7 +577,7 @@
             "2",
             "3",
             "4"});
-            this.PlayerNumberBox.Location = new System.Drawing.Point(316, 112);
+            this.PlayerNumberBox.Location = new System.Drawing.Point(387, 104);
             this.PlayerNumberBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlayerNumberBox.Name = "PlayerNumberBox";
             this.PlayerNumberBox.Size = new System.Drawing.Size(97, 24);
@@ -599,51 +587,21 @@
             // PlayerNumberLabel
             // 
             this.PlayerNumberLabel.AutoSize = true;
-            this.PlayerNumberLabel.Location = new System.Drawing.Point(228, 68);
+            this.PlayerNumberLabel.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PlayerNumberLabel.Location = new System.Drawing.Point(95, 40);
             this.PlayerNumberLabel.Name = "PlayerNumberLabel";
-            this.PlayerNumberLabel.Size = new System.Drawing.Size(274, 17);
+            this.PlayerNumberLabel.Size = new System.Drawing.Size(655, 33);
             this.PlayerNumberLabel.TabIndex = 35;
-            this.PlayerNumberLabel.Text = "How many Player will be preparing feasts?";
-            // 
-            // StartButton
-            // 
-            this.StartButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
-            this.StartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.StartButton.Location = new System.Drawing.Point(146, 407);
-            this.StartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(373, 191);
-            this.StartButton.TabIndex = 46;
-            this.StartButton.UseVisualStyleBackColor = true;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
-            // pictureBoxPlayers
-            // 
-            this.pictureBoxPlayers.Location = new System.Drawing.Point(35, 152);
-            this.pictureBoxPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxPlayers.Name = "pictureBoxPlayers";
-            this.pictureBoxPlayers.Size = new System.Drawing.Size(623, 524);
-            this.pictureBoxPlayers.TabIndex = 47;
-            this.pictureBoxPlayers.TabStop = false;
-            // 
-            // pictureBoxRadioButtons
-            // 
-            this.pictureBoxRadioButtons.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBoxRadioButtons.Location = new System.Drawing.Point(37, 28);
-            this.pictureBoxRadioButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxRadioButtons.Name = "pictureBoxRadioButtons";
-            this.pictureBoxRadioButtons.Size = new System.Drawing.Size(411, 98);
-            this.pictureBoxRadioButtons.TabIndex = 48;
-            this.pictureBoxRadioButtons.TabStop = false;
+            this.PlayerNumberLabel.Text = "How many Vikings will be preparing feasts?";
             // 
             // Player1EndscoreLabel
             // 
             this.Player1EndscoreLabel.AutoSize = true;
             this.Player1EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player1EndscoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player1EndscoreLabel.Location = new System.Drawing.Point(190, 130);
+            this.Player1EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1EndscoreLabel.Location = new System.Drawing.Point(189, 130);
             this.Player1EndscoreLabel.Name = "Player1EndscoreLabel";
-            this.Player1EndscoreLabel.Size = new System.Drawing.Size(247, 36);
+            this.Player1EndscoreLabel.Size = new System.Drawing.Size(301, 37);
             this.Player1EndscoreLabel.TabIndex = 49;
             this.Player1EndscoreLabel.Text = "Player1 endscore";
             // 
@@ -651,10 +609,10 @@
             // 
             this.Player2EndscoreLabel.AutoSize = true;
             this.Player2EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player2EndscoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player2EndscoreLabel.Location = new System.Drawing.Point(191, 206);
+            this.Player2EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2EndscoreLabel.Location = new System.Drawing.Point(189, 205);
             this.Player2EndscoreLabel.Name = "Player2EndscoreLabel";
-            this.Player2EndscoreLabel.Size = new System.Drawing.Size(247, 36);
+            this.Player2EndscoreLabel.Size = new System.Drawing.Size(303, 37);
             this.Player2EndscoreLabel.TabIndex = 50;
             this.Player2EndscoreLabel.Text = "Player2 endscore";
             // 
@@ -662,10 +620,10 @@
             // 
             this.Player3EndscoreLabel.AutoSize = true;
             this.Player3EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player3EndscoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player3EndscoreLabel.Location = new System.Drawing.Point(190, 279);
+            this.Player3EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3EndscoreLabel.Location = new System.Drawing.Point(186, 267);
             this.Player3EndscoreLabel.Name = "Player3EndscoreLabel";
-            this.Player3EndscoreLabel.Size = new System.Drawing.Size(247, 36);
+            this.Player3EndscoreLabel.Size = new System.Drawing.Size(304, 37);
             this.Player3EndscoreLabel.TabIndex = 51;
             this.Player3EndscoreLabel.Text = "Player3 endscore";
             // 
@@ -673,24 +631,16 @@
             // 
             this.Player4EndscoreLabel.AutoSize = true;
             this.Player4EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player4EndscoreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Player4EndscoreLabel.Location = new System.Drawing.Point(191, 342);
+            this.Player4EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4EndscoreLabel.Location = new System.Drawing.Point(189, 325);
             this.Player4EndscoreLabel.Name = "Player4EndscoreLabel";
-            this.Player4EndscoreLabel.Size = new System.Drawing.Size(247, 36);
+            this.Player4EndscoreLabel.Size = new System.Drawing.Size(306, 37);
             this.Player4EndscoreLabel.TabIndex = 52;
             this.Player4EndscoreLabel.Text = "Player4 endscore";
             // 
-            // pictureBoxEndscore
-            // 
-            this.pictureBoxEndscore.Location = new System.Drawing.Point(12, 13);
-            this.pictureBoxEndscore.Name = "pictureBoxEndscore";
-            this.pictureBoxEndscore.Size = new System.Drawing.Size(622, 527);
-            this.pictureBoxEndscore.TabIndex = 53;
-            this.pictureBoxEndscore.TabStop = false;
-            // 
             // ShipsBoxP3
             // 
-            this.ShipsBoxP3.Location = new System.Drawing.Point(196, 279);
+            this.ShipsBoxP3.Location = new System.Drawing.Point(250, 290);
             this.ShipsBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShipsBoxP3.Name = "ShipsBoxP3";
             this.ShipsBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -699,7 +649,7 @@
             // 
             // EmigrationBoxP3
             // 
-            this.EmigrationBoxP3.Location = new System.Drawing.Point(196, 308);
+            this.EmigrationBoxP3.Location = new System.Drawing.Point(250, 325);
             this.EmigrationBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmigrationBoxP3.Name = "EmigrationBoxP3";
             this.EmigrationBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -708,7 +658,7 @@
             // 
             // ExplorationBoardsPBoxP3
             // 
-            this.ExplorationBoardsPBoxP3.Location = new System.Drawing.Point(196, 339);
+            this.ExplorationBoardsPBoxP3.Location = new System.Drawing.Point(250, 360);
             this.ExplorationBoardsPBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsPBoxP3.Name = "ExplorationBoardsPBoxP3";
             this.ExplorationBoardsPBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -717,7 +667,7 @@
             // 
             // ShedsHousesPBoxP3
             // 
-            this.ShedsHousesPBoxP3.Location = new System.Drawing.Point(197, 367);
+            this.ShedsHousesPBoxP3.Location = new System.Drawing.Point(250, 395);
             this.ShedsHousesPBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesPBoxP3.Name = "ShedsHousesPBoxP3";
             this.ShedsHousesPBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -726,7 +676,7 @@
             // 
             // SheepCattleBoxP3
             // 
-            this.SheepCattleBoxP3.Location = new System.Drawing.Point(196, 395);
+            this.SheepCattleBoxP3.Location = new System.Drawing.Point(250, 430);
             this.SheepCattleBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SheepCattleBoxP3.Name = "SheepCattleBoxP3";
             this.SheepCattleBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -735,7 +685,7 @@
             // 
             // OccupationsBoxP3
             // 
-            this.OccupationsBoxP3.Location = new System.Drawing.Point(196, 423);
+            this.OccupationsBoxP3.Location = new System.Drawing.Point(250, 465);
             this.OccupationsBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OccupationsBoxP3.Name = "OccupationsBoxP3";
             this.OccupationsBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -744,7 +694,7 @@
             // 
             // SilverBoxP3
             // 
-            this.SilverBoxP3.Location = new System.Drawing.Point(196, 452);
+            this.SilverBoxP3.Location = new System.Drawing.Point(250, 500);
             this.SilverBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SilverBoxP3.Name = "SilverBoxP3";
             this.SilverBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -753,7 +703,7 @@
             // 
             // FinalIncomeBoxP3
             // 
-            this.FinalIncomeBoxP3.Location = new System.Drawing.Point(196, 480);
+            this.FinalIncomeBoxP3.Location = new System.Drawing.Point(250, 535);
             this.FinalIncomeBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FinalIncomeBoxP3.Name = "FinalIncomeBoxP3";
             this.FinalIncomeBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -762,7 +712,7 @@
             // 
             // HomeBoardBoxP3
             // 
-            this.HomeBoardBoxP3.Location = new System.Drawing.Point(552, 277);
+            this.HomeBoardBoxP3.Location = new System.Drawing.Point(610, 290);
             this.HomeBoardBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBoardBoxP3.Name = "HomeBoardBoxP3";
             this.HomeBoardBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -771,7 +721,7 @@
             // 
             // ExplorationBoardsNBoxP3
             // 
-            this.ExplorationBoardsNBoxP3.Location = new System.Drawing.Point(552, 308);
+            this.ExplorationBoardsNBoxP3.Location = new System.Drawing.Point(610, 325);
             this.ExplorationBoardsNBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsNBoxP3.Name = "ExplorationBoardsNBoxP3";
             this.ExplorationBoardsNBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -780,7 +730,7 @@
             // 
             // ShedsHousesNBoxP3
             // 
-            this.ShedsHousesNBoxP3.Location = new System.Drawing.Point(552, 337);
+            this.ShedsHousesNBoxP3.Location = new System.Drawing.Point(610, 360);
             this.ShedsHousesNBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesNBoxP3.Name = "ShedsHousesNBoxP3";
             this.ShedsHousesNBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -789,7 +739,7 @@
             // 
             // ThingPenaltyBoxP3
             // 
-            this.ThingPenaltyBoxP3.Location = new System.Drawing.Point(552, 367);
+            this.ThingPenaltyBoxP3.Location = new System.Drawing.Point(610, 395);
             this.ThingPenaltyBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ThingPenaltyBoxP3.Name = "ThingPenaltyBoxP3";
             this.ThingPenaltyBoxP3.Size = new System.Drawing.Size(100, 22);
@@ -799,7 +749,8 @@
             // EnglishCrownBoxP3
             // 
             this.EnglishCrownBoxP3.AutoSize = true;
-            this.EnglishCrownBoxP3.Location = new System.Drawing.Point(199, 507);
+            this.EnglishCrownBoxP3.Location = new System.Drawing.Point(250, 574);
+            this.EnglishCrownBoxP3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EnglishCrownBoxP3.Name = "EnglishCrownBoxP3";
             this.EnglishCrownBoxP3.Size = new System.Drawing.Size(18, 17);
             this.EnglishCrownBoxP3.TabIndex = 66;
@@ -808,7 +759,7 @@
             // 
             // ShipsBoxP2
             // 
-            this.ShipsBoxP2.Location = new System.Drawing.Point(197, 279);
+            this.ShipsBoxP2.Location = new System.Drawing.Point(250, 290);
             this.ShipsBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShipsBoxP2.Name = "ShipsBoxP2";
             this.ShipsBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -817,7 +768,7 @@
             // 
             // EmigrationBoxP2
             // 
-            this.EmigrationBoxP2.Location = new System.Drawing.Point(197, 308);
+            this.EmigrationBoxP2.Location = new System.Drawing.Point(250, 325);
             this.EmigrationBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmigrationBoxP2.Name = "EmigrationBoxP2";
             this.EmigrationBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -826,7 +777,7 @@
             // 
             // ExplorationBoardsPBoxP2
             // 
-            this.ExplorationBoardsPBoxP2.Location = new System.Drawing.Point(197, 339);
+            this.ExplorationBoardsPBoxP2.Location = new System.Drawing.Point(250, 360);
             this.ExplorationBoardsPBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsPBoxP2.Name = "ExplorationBoardsPBoxP2";
             this.ExplorationBoardsPBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -835,7 +786,7 @@
             // 
             // ShedsHousesPBoxP2
             // 
-            this.ShedsHousesPBoxP2.Location = new System.Drawing.Point(197, 367);
+            this.ShedsHousesPBoxP2.Location = new System.Drawing.Point(250, 395);
             this.ShedsHousesPBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesPBoxP2.Name = "ShedsHousesPBoxP2";
             this.ShedsHousesPBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -844,7 +795,7 @@
             // 
             // SheepCattleBoxP2
             // 
-            this.SheepCattleBoxP2.Location = new System.Drawing.Point(197, 395);
+            this.SheepCattleBoxP2.Location = new System.Drawing.Point(250, 430);
             this.SheepCattleBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SheepCattleBoxP2.Name = "SheepCattleBoxP2";
             this.SheepCattleBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -853,7 +804,7 @@
             // 
             // OccupationsBoxP2
             // 
-            this.OccupationsBoxP2.Location = new System.Drawing.Point(196, 423);
+            this.OccupationsBoxP2.Location = new System.Drawing.Point(250, 465);
             this.OccupationsBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OccupationsBoxP2.Name = "OccupationsBoxP2";
             this.OccupationsBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -862,7 +813,7 @@
             // 
             // SilverBoxP2
             // 
-            this.SilverBoxP2.Location = new System.Drawing.Point(196, 452);
+            this.SilverBoxP2.Location = new System.Drawing.Point(250, 500);
             this.SilverBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SilverBoxP2.Name = "SilverBoxP2";
             this.SilverBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -871,7 +822,7 @@
             // 
             // FinalIncomeBoxP2
             // 
-            this.FinalIncomeBoxP2.Location = new System.Drawing.Point(197, 480);
+            this.FinalIncomeBoxP2.Location = new System.Drawing.Point(250, 535);
             this.FinalIncomeBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FinalIncomeBoxP2.Name = "FinalIncomeBoxP2";
             this.FinalIncomeBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -880,7 +831,7 @@
             // 
             // HomeBoardBoxP2
             // 
-            this.HomeBoardBoxP2.Location = new System.Drawing.Point(552, 277);
+            this.HomeBoardBoxP2.Location = new System.Drawing.Point(610, 290);
             this.HomeBoardBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBoardBoxP2.Name = "HomeBoardBoxP2";
             this.HomeBoardBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -889,7 +840,7 @@
             // 
             // ExplorationBoardsNBoxP2
             // 
-            this.ExplorationBoardsNBoxP2.Location = new System.Drawing.Point(552, 308);
+            this.ExplorationBoardsNBoxP2.Location = new System.Drawing.Point(610, 325);
             this.ExplorationBoardsNBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsNBoxP2.Name = "ExplorationBoardsNBoxP2";
             this.ExplorationBoardsNBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -898,7 +849,7 @@
             // 
             // ShedsHousesNBoxP2
             // 
-            this.ShedsHousesNBoxP2.Location = new System.Drawing.Point(552, 337);
+            this.ShedsHousesNBoxP2.Location = new System.Drawing.Point(610, 360);
             this.ShedsHousesNBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesNBoxP2.Name = "ShedsHousesNBoxP2";
             this.ShedsHousesNBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -907,7 +858,7 @@
             // 
             // ThingPenaltyBoxP2
             // 
-            this.ThingPenaltyBoxP2.Location = new System.Drawing.Point(552, 367);
+            this.ThingPenaltyBoxP2.Location = new System.Drawing.Point(610, 395);
             this.ThingPenaltyBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ThingPenaltyBoxP2.Name = "ThingPenaltyBoxP2";
             this.ThingPenaltyBoxP2.Size = new System.Drawing.Size(100, 22);
@@ -917,7 +868,8 @@
             // EnglishCrownBoxP2
             // 
             this.EnglishCrownBoxP2.AutoSize = true;
-            this.EnglishCrownBoxP2.Location = new System.Drawing.Point(199, 508);
+            this.EnglishCrownBoxP2.Location = new System.Drawing.Point(250, 570);
+            this.EnglishCrownBoxP2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EnglishCrownBoxP2.Name = "EnglishCrownBoxP2";
             this.EnglishCrownBoxP2.Size = new System.Drawing.Size(18, 17);
             this.EnglishCrownBoxP2.TabIndex = 79;
@@ -926,16 +878,16 @@
             // 
             // ShipsBoxP1
             // 
-            this.ShipsBoxP1.Location = new System.Drawing.Point(197, 279);
+            this.ShipsBoxP1.Location = new System.Drawing.Point(250, 290);
             this.ShipsBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShipsBoxP1.Name = "ShipsBoxP1";
             this.ShipsBoxP1.Size = new System.Drawing.Size(100, 22);
             this.ShipsBoxP1.TabIndex = 80;
-            this.ShipsBoxP1.TextChanged += new System.EventHandler(this.ThingPenaltyBoxP1_TextChanged);
+            this.ShipsBoxP1.TextChanged += new System.EventHandler(this.ShipsBoxP1_TextChanged);
             // 
             // EmigrationBoxP1
             // 
-            this.EmigrationBoxP1.Location = new System.Drawing.Point(196, 308);
+            this.EmigrationBoxP1.Location = new System.Drawing.Point(250, 325);
             this.EmigrationBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmigrationBoxP1.Name = "EmigrationBoxP1";
             this.EmigrationBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -944,7 +896,7 @@
             // 
             // ExplorationBoardsPBoxP1
             // 
-            this.ExplorationBoardsPBoxP1.Location = new System.Drawing.Point(197, 339);
+            this.ExplorationBoardsPBoxP1.Location = new System.Drawing.Point(250, 360);
             this.ExplorationBoardsPBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsPBoxP1.Name = "ExplorationBoardsPBoxP1";
             this.ExplorationBoardsPBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -953,7 +905,7 @@
             // 
             // ShedsHousesPBoxP1
             // 
-            this.ShedsHousesPBoxP1.Location = new System.Drawing.Point(197, 367);
+            this.ShedsHousesPBoxP1.Location = new System.Drawing.Point(250, 395);
             this.ShedsHousesPBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesPBoxP1.Name = "ShedsHousesPBoxP1";
             this.ShedsHousesPBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -962,7 +914,7 @@
             // 
             // SheepCattleBoxP1
             // 
-            this.SheepCattleBoxP1.Location = new System.Drawing.Point(196, 395);
+            this.SheepCattleBoxP1.Location = new System.Drawing.Point(250, 430);
             this.SheepCattleBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SheepCattleBoxP1.Name = "SheepCattleBoxP1";
             this.SheepCattleBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -971,7 +923,7 @@
             // 
             // OccupationsBoxP1
             // 
-            this.OccupationsBoxP1.Location = new System.Drawing.Point(196, 423);
+            this.OccupationsBoxP1.Location = new System.Drawing.Point(250, 465);
             this.OccupationsBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.OccupationsBoxP1.Name = "OccupationsBoxP1";
             this.OccupationsBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -980,7 +932,7 @@
             // 
             // SilverBoxP1
             // 
-            this.SilverBoxP1.Location = new System.Drawing.Point(196, 452);
+            this.SilverBoxP1.Location = new System.Drawing.Point(250, 500);
             this.SilverBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SilverBoxP1.Name = "SilverBoxP1";
             this.SilverBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -989,7 +941,7 @@
             // 
             // FinalIncomeBoxP1
             // 
-            this.FinalIncomeBoxP1.Location = new System.Drawing.Point(196, 481);
+            this.FinalIncomeBoxP1.Location = new System.Drawing.Point(250, 535);
             this.FinalIncomeBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.FinalIncomeBoxP1.Name = "FinalIncomeBoxP1";
             this.FinalIncomeBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -998,7 +950,7 @@
             // 
             // HomeBoardBoxP1
             // 
-            this.HomeBoardBoxP1.Location = new System.Drawing.Point(552, 277);
+            this.HomeBoardBoxP1.Location = new System.Drawing.Point(610, 290);
             this.HomeBoardBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HomeBoardBoxP1.Name = "HomeBoardBoxP1";
             this.HomeBoardBoxP1.Size = new System.Drawing.Size(100, 22);
@@ -1007,64 +959,149 @@
             // 
             // ExplorationBoardsNBoxP1
             // 
-            this.ExplorationBoardsNBoxP1.Location = new System.Drawing.Point(552, 308);
+            this.ExplorationBoardsNBoxP1.Location = new System.Drawing.Point(610, 325);
             this.ExplorationBoardsNBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ExplorationBoardsNBoxP1.Name = "ExplorationBoardsNBoxP1";
             this.ExplorationBoardsNBoxP1.Size = new System.Drawing.Size(100, 22);
-            this.ExplorationBoardsNBoxP1.Text = "0";
             this.ExplorationBoardsNBoxP1.TabIndex = 89;
             this.ExplorationBoardsNBoxP1.TextChanged += new System.EventHandler(this.ExplorationBoardsNBoxP1_TextChanged);
             // 
             // ShedsHousesNBoxP1
             // 
-            this.ShedsHousesNBoxP1.Location = new System.Drawing.Point(552, 337);
+            this.ShedsHousesNBoxP1.Location = new System.Drawing.Point(610, 360);
             this.ShedsHousesNBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ShedsHousesNBoxP1.Name = "ShedsHousesNBoxP1";
             this.ShedsHousesNBoxP1.Size = new System.Drawing.Size(100, 22);
-            this.ShedsHousesNBoxP1.Text = "0";
             this.ShedsHousesNBoxP1.TabIndex = 90;
             this.ShedsHousesNBoxP1.TextChanged += new System.EventHandler(this.ShedsHousesNBoxP1_TextChanged);
             // 
             // ThingPenaltyBoxP1
             // 
-            this.ThingPenaltyBoxP1.Location = new System.Drawing.Point(552, 367);
+            this.ThingPenaltyBoxP1.Location = new System.Drawing.Point(610, 395);
             this.ThingPenaltyBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ThingPenaltyBoxP1.Name = "ThingPenaltyBoxP1";
             this.ThingPenaltyBoxP1.Size = new System.Drawing.Size(100, 22);
-            this.ThingPenaltyBoxP1.Text = "0";
             this.ThingPenaltyBoxP1.TabIndex = 91;
             this.ThingPenaltyBoxP1.TextChanged += new System.EventHandler(this.ThingPenaltyBoxP1_TextChanged);
             // 
             // EnglishCrownBoxP1
             // 
             this.EnglishCrownBoxP1.AutoSize = true;
-            this.EnglishCrownBoxP1.Location = new System.Drawing.Point(199, 508);
+            this.EnglishCrownBoxP1.Location = new System.Drawing.Point(250, 574);
+            this.EnglishCrownBoxP1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EnglishCrownBoxP1.Name = "EnglishCrownBoxP1";
             this.EnglishCrownBoxP1.Size = new System.Drawing.Size(18, 17);
             this.EnglishCrownBoxP1.TabIndex = 92;
             this.EnglishCrownBoxP1.UseVisualStyleBackColor = true;
             this.EnglishCrownBoxP1.CheckedChanged += new System.EventHandler(this.EnglishCrownBoxP1_CheckedChanged);
             // 
+            // pictureBoxPlayers
+            // 
+            this.pictureBoxPlayers.BackgroundImage = global::Odin_Scores.Properties.Resources.pic3214824;
+            this.pictureBoxPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxPlayers.Location = new System.Drawing.Point(31, 149);
+            this.pictureBoxPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxPlayers.Name = "pictureBoxPlayers";
+            this.pictureBoxPlayers.Size = new System.Drawing.Size(862, 616);
+            this.pictureBoxPlayers.TabIndex = 47;
+            this.pictureBoxPlayers.TabStop = false;
+            // 
+            // StartButton
+            // 
+            this.StartButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
+            this.StartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.StartButton.Location = new System.Drawing.Point(193, 491);
+            this.StartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(447, 274);
+            this.StartButton.TabIndex = 46;
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
+            // 
+            // pictureBoxForm
+            // 
+            this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxForm.Location = new System.Drawing.Point(16, 15);
+            this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxForm.Name = "pictureBoxForm";
+            this.pictureBoxForm.Size = new System.Drawing.Size(925, 768);
+            this.pictureBoxForm.TabIndex = 33;
+            this.pictureBoxForm.TabStop = false;
+            // 
+            // ScoreButton
+            // 
+            this.ScoreButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
+            this.ScoreButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ScoreButton.Location = new System.Drawing.Point(558, 31);
+            this.ScoreButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ScoreButton.Name = "ScoreButton";
+            this.ScoreButton.Size = new System.Drawing.Size(221, 132);
+            this.ScoreButton.TabIndex = 4;
+            this.ScoreButton.UseVisualStyleBackColor = true;
+            this.ScoreButton.Click += new System.EventHandler(this.ScoreButton_Click);
+            // 
+            // pictureBoxRadioButtons
+            // 
+            this.pictureBoxRadioButtons.BackColor = System.Drawing.Color.MintCream;
+            this.pictureBoxRadioButtons.Location = new System.Drawing.Point(31, 29);
+            this.pictureBoxRadioButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxRadioButtons.Name = "pictureBoxRadioButtons";
+            this.pictureBoxRadioButtons.Size = new System.Drawing.Size(411, 98);
+            this.pictureBoxRadioButtons.TabIndex = 48;
+            this.pictureBoxRadioButtons.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Odin_Scores.Properties.Resources.zm7690_boards_and_cards;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox1.Location = new System.Drawing.Point(391, 465);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(397, 300);
+            this.pictureBox1.TabIndex = 93;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBoxEndscore
+            // 
+            this.pictureBoxEndscore.Location = new System.Drawing.Point(101, 130);
+            this.pictureBoxEndscore.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBoxEndscore.Name = "pictureBoxEndscore";
+            this.pictureBoxEndscore.Size = new System.Drawing.Size(621, 527);
+            this.pictureBoxEndscore.TabIndex = 53;
+            this.pictureBoxEndscore.TabStop = false;
+            // 
+            // labelWatTeDoen
+            // 
+            this.labelWatTeDoen.AutoSize = true;
+            this.labelWatTeDoen.BackColor = System.Drawing.Color.Transparent;
+            this.labelWatTeDoen.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelWatTeDoen.Location = new System.Drawing.Point(12, 146);
+            this.labelWatTeDoen.Name = "labelWatTeDoen";
+            this.labelWatTeDoen.Size = new System.Drawing.Size(524, 21);
+            this.labelWatTeDoen.TabIndex = 94;
+            this.labelWatTeDoen.Text = "Selected the player and then enter his scores in each box";
+            // 
             // OdinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(822, 687);
+            this.ClientSize = new System.Drawing.Size(1609, 752);
             this.Controls.Add(this.pictureBoxPlayers);
             this.Controls.Add(this.labelPlayerSelect);
-            this.Controls.Add(this.Player3Text);
-            this.Controls.Add(this.Player4Text);
+            this.Controls.Add(this.PlayerNumberBox);
+            this.Controls.Add(this.PlayerNumberLabel);
+            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.Player4Colour);
             this.Controls.Add(this.Player3Colour);
             this.Controls.Add(this.Player2Colour);
+            this.Controls.Add(this.Player1Colour);
+            this.Controls.Add(this.Player4Text);
+            this.Controls.Add(this.Player3Text);
             this.Controls.Add(this.Player2Text);
             this.Controls.Add(this.Player1Text);
-            this.Controls.Add(this.StartButton);
-            this.Controls.Add(this.PlayerNumberBox);
-            this.Controls.Add(this.Player1Colour);
-            this.Controls.Add(this.PlayerNumberLabel);
             this.Controls.Add(this.pictureBoxForm);
+            this.Controls.Add(this.labelWatTeDoen);
             this.Controls.Add(this.EnglishCrownBoxP1);
             this.Controls.Add(this.ThingPenaltyBoxP1);
             this.Controls.Add(this.ShedsHousesNBoxP1);
@@ -1132,24 +1169,25 @@
             this.Controls.Add(this.labelExplorationBoardP);
             this.Controls.Add(this.labelEmigration);
             this.Controls.Add(this.labelShips);
-            this.Controls.Add(this.labelWatTeDoen);
             this.Controls.Add(this.ScoreButton);
             this.Controls.Add(this.Player4radioButton);
             this.Controls.Add(this.Player3radioButton);
             this.Controls.Add(this.Player2radioButton);
             this.Controls.Add(this.Player1radioButton);
             this.Controls.Add(this.pictureBoxRadioButtons);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxEndscore);
-            this.Controls.Add(this.Player4EndscoreLabel);
             this.Controls.Add(this.Player3EndscoreLabel);
-            this.Controls.Add(this.Player2EndscoreLabel);
+            this.Controls.Add(this.Player4EndscoreLabel);
             this.Controls.Add(this.Player1EndscoreLabel);
+            this.Controls.Add(this.Player2EndscoreLabel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "OdinForm";
             this.Text = "Odin";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlayers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRadioButtons)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEndscore)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1163,7 +1201,6 @@
         private System.Windows.Forms.RadioButton Player3radioButton;
         private System.Windows.Forms.RadioButton Player4radioButton;
         private System.Windows.Forms.Button ScoreButton;
-        private System.Windows.Forms.Label labelWatTeDoen;
         private System.Windows.Forms.Label labelShips;
         private System.Windows.Forms.Label labelEmigration;
         private System.Windows.Forms.Label labelExplorationBoardP;
@@ -1251,5 +1288,7 @@
         private System.Windows.Forms.TextBox ShedsHousesNBoxP1;
         private System.Windows.Forms.TextBox ThingPenaltyBoxP1;
         private System.Windows.Forms.CheckBox EnglishCrownBoxP1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelWatTeDoen;
     }
 }

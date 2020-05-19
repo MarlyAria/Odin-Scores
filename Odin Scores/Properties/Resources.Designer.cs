@@ -19,7 +19,7 @@ namespace Odin_Scores.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -113,6 +113,16 @@ namespace Odin_Scores.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pic3214824 {
+            get {
+                object obj = ResourceManager.GetObject("pic3214824", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_meeple {
             get {
                 object obj = ResourceManager.GetObject("red meeple", resourceCulture);
@@ -126,6 +136,16 @@ namespace Odin_Scores.Properties {
         internal static System.Drawing.Bitmap yellow_meeple {
             get {
                 object obj = ResourceManager.GetObject("yellow meeple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zm7690_boards_and_cards {
+            get {
+                object obj = ResourceManager.GetObject("zm7690_boards-and-cards", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -18,27 +18,217 @@ namespace Odin_Scores
         Player Player2 = new Player();
         Player Player3 = new Player();
         Player Player4 = new Player();
-               
+
+                       
         public OdinForm()
         {
             InitializeComponent();
+            Player1.Name = "Player 1";
+            Player2.Name = "Player 2";
+            Player3.Name = "Player 3";
+            Player4.Name = "Player 4";
         }
-                
+
+        private void PlayerNumberBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Party.Selected = Convert.ToInt16(PlayerNumberBox.SelectedIndex);
+            // Omdat de selectie een array is moet je er 1 bijop tellen zodat je party overeenkomst met het aantal spelers.
+            Party.Size = Party.Selected + 1;
+
+            if (Party.Size == 1)
+            {
+                pictureBoxPlayers.Visible = false;
+                Player1Text.Visible = true;
+                Player1Text.BackColor = Color.Azure;
+                Player1Colour.Visible = true;
+                Player1Colour.BackColor = Color.Azure;
+                Player2Text.Visible = false;
+                Player2Colour.Visible = false;
+                Player3Text.Visible = false;
+                Player3Colour.Visible = false;
+                Player4Text.Visible = false;
+                Player4Colour.Visible = false;
+                Player1radioButton.Visible = true;
+                Player1radioButton.BackColor = Color.Azure;
+                Player2radioButton.Visible = false;
+                Player3radioButton.Visible = false;
+                Player4radioButton.Visible = false;
+                Player1EndscoreLabel.Visible = true;
+                Player1EndscoreLabel.BackColor = Color.Azure;
+                Player2EndscoreLabel.Visible = false;
+                Player3EndscoreLabel.Visible = false;
+                Player4EndscoreLabel.Visible = false;
+            }
+
+            else if (Party.Size == 2)
+            {
+                pictureBoxPlayers.Visible = false;
+                Player1Text.Visible = true;
+                Player1Text.BackColor = Color.Azure;
+                Player1Colour.Visible = true;
+                Player1Colour.BackColor = Color.Azure;
+                Player2Text.Visible = true;
+                Player2Text.BackColor = Color.Azure;
+                Player2Colour.Visible = true;
+                Player2Colour.BackColor = Color.Azure;
+                Player3Text.Visible = false;
+                Player3Colour.Visible = false;
+                Player4Text.Visible = false;
+                Player4Colour.Visible = false;
+                Player1radioButton.Visible = true;
+                Player1radioButton.BackColor = Color.Azure;
+                Player2radioButton.Visible = true;
+                Player2radioButton.BackColor = Color.Azure;
+                Player3radioButton.Visible = false;
+                Player4radioButton.Visible = false;
+                Player1EndscoreLabel.Visible = true;
+                Player1EndscoreLabel.BackColor = Color.Azure;
+                Player2EndscoreLabel.Visible = true;
+                Player2EndscoreLabel.BackColor = Color.Azure;
+                Player3EndscoreLabel.Visible = false;
+                Player4EndscoreLabel.Visible = false;
+            }
+
+            else if (Party.Size == 3)
+            {
+                pictureBoxPlayers.Visible = false;
+                Player1Text.Visible = true;
+                Player1Text.BackColor = Color.Azure;
+                Player1Colour.Visible = true;
+                Player1Colour.BackColor = Color.Azure;
+                Player2Text.Visible = true;
+                Player2Text.BackColor = Color.Azure;
+                Player2Colour.Visible = true;
+                Player2Colour.BackColor = Color.Azure;
+                Player3Text.Visible = true;
+                Player3Text.BackColor = Color.Azure;
+                Player3Colour.Visible = true;
+                Player3Colour.BackColor = Color.Azure;
+                Player4Text.Visible = false;
+                Player4Colour.Visible = false;
+                Player1radioButton.Visible = true;
+                Player1radioButton.BackColor = Color.Azure;
+                Player2radioButton.Visible = true;
+                Player2radioButton.BackColor = Color.Azure;
+                Player3radioButton.Visible = true;
+                Player3radioButton.BackColor = Color.Azure;
+                Player4radioButton.Visible = false;
+                Player1EndscoreLabel.Visible = true;
+                Player1EndscoreLabel.BackColor = Color.Azure;
+                Player2EndscoreLabel.Visible = true;
+                Player2EndscoreLabel.BackColor = Color.Azure;
+                Player3EndscoreLabel.Visible = true;
+                Player3EndscoreLabel.BackColor = Color.Azure;
+                Player4EndscoreLabel.Visible = false;
+            }
+
+            else if (Party.Size >= 4)
+            {
+                pictureBoxPlayers.Visible = false;
+                Player1Text.Visible = true;
+                Player1Text.BackColor = Color.Azure;
+                Player1Colour.Visible = true;
+                Player1Colour.BackColor = Color.Azure;
+                Player2Text.Visible = true;
+                Player2Text.BackColor = Color.Azure;
+                Player2Colour.Visible = true;
+                Player2Colour.BackColor = Color.Azure;
+                Player3Text.Visible = true;
+                Player3Text.BackColor = Color.Azure;
+                Player3Colour.Visible = true;
+                Player3Colour.BackColor = Color.Azure;
+                Player4Text.Visible = true;
+                Player4Text.BackColor = Color.Azure;
+                Player4Colour.Visible = true;
+                Player4Colour.BackColor = Color.Azure;
+                Player1radioButton.Visible = true;
+                Player1radioButton.BackColor = Color.Azure;
+                Player2radioButton.Visible = true;
+                Player2radioButton.BackColor = Color.Azure;
+                Player3radioButton.Visible = true;
+                Player3radioButton.BackColor = Color.Azure;
+                Player4radioButton.Visible = true;
+                Player4radioButton.BackColor = Color.Azure;
+                Player1EndscoreLabel.Visible = true;
+                Player1EndscoreLabel.BackColor = Color.Azure;
+                Player2EndscoreLabel.Visible = true;
+                Player2EndscoreLabel.BackColor = Color.Azure;
+                Player3EndscoreLabel.Visible = true;
+                Player3EndscoreLabel.BackColor = Color.Azure;
+                Player4EndscoreLabel.Visible = true;
+                Player4EndscoreLabel.BackColor = Color.Azure;
+            }
+        }
+
+        private void StartButton_Click(object sender, EventArgs e)
+        {
+            pictureBoxForm.Visible = false;
+            pictureBoxPlayers.Visible = false;
+            Player1Text.Visible = false;
+            Player1Colour.Visible = false;
+            Player2Text.Visible = false;
+            Player2Colour.Visible = false;
+            Player3Text.Visible = false;
+            Player3Colour.Visible = false;
+            Player4Text.Visible = false;
+            Player4Colour.Visible = false;
+            labelPlayerSelect.Visible = false;
+            StartButton.Visible = false;
+            PlayerNumberBox.Visible = false;
+            PlayerNumberLabel.Visible = false;
+        }
+
         public void ScoreButton_Click(object sender, EventArgs e)
         {
             #region Spelers uitrekenen
-            Player1.AddPlus();
-            Player1.AddMin();
-            Player1.Totaal();
-            Player2.AddPlus();
-            Player2.AddMin();
-            Player2.Totaal();
-            Player3.AddPlus();
-            Player3.AddMin();
-            Player3.Totaal();
-            Player4.AddPlus();
-            Player4.AddMin();
-            Player4.Totaal();
+            if (Party.Size == 1)
+            {
+                Player1.AddPlus();
+                Player1.AddMin();
+                Player1.Totaal();
+                Player2.Endscore = -99999;
+                Player3.Endscore = -99999;
+                Player4.Endscore = -99999;
+            }
+            if (Party.Size == 2)
+            {
+                Player1.AddPlus();
+                Player1.AddMin();
+                Player1.Totaal();
+                Player2.AddPlus();
+                Player2.AddMin();
+                Player2.Totaal();
+                Player3.Endscore = -99999;
+                Player4.Endscore = -99999;
+            }
+            if (Party.Size == 3)
+            {
+                Player1.AddPlus();
+                Player1.AddMin();
+                Player1.Totaal();
+                Player2.AddPlus();
+                Player2.AddMin();
+                Player2.Totaal();
+                Player3.AddPlus();
+                Player3.AddMin();
+                Player3.Totaal();
+                Player4.Endscore = -99999;
+            }
+            if (Party.Size == 4)
+            {
+                Player1.AddPlus();
+                Player1.AddMin();
+                Player1.Totaal();
+                Player2.AddPlus();
+                Player2.AddMin();
+                Player2.Totaal();
+                Player3.AddPlus();
+                Player3.AddMin();
+                Player3.Totaal();
+                Player4.AddPlus();
+                Player4.AddMin();
+                Player4.Totaal();
+            }
             #endregion
 
             #region Party Winnaar uitrekenen
@@ -165,168 +355,7 @@ namespace Odin_Scores
             Player4EndscoreLabel.Text = Player4.Name.ToString() + " has " + Player4.Endscore.ToString() + " points.";
             #endregion  
         }
-
-
-        private void StartButton_Click(object sender, EventArgs e)
-        {
-            pictureBoxForm.Visible = false;
-            pictureBoxPlayers.Visible = false;
-            Player1Text.Visible = false;
-            Player1Colour.Visible = false;
-            Player2Text.Visible = false;
-            Player2Colour.Visible = false;
-            Player3Text.Visible = false;
-            Player3Colour.Visible = false;
-            Player4Text.Visible = false;
-            Player4Colour.Visible = false;
-            labelPlayerSelect.Visible = false;
-            StartButton.Visible = false;
-            PlayerNumberBox.Visible = false;
-            PlayerNumberLabel.Visible = false;
-        }
-
-
-        
-        private void PlayerNumberBox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            Party.Selected = Convert.ToInt16(PlayerNumberBox.SelectedIndex);
-            // Omdat de selectie een array is moet je er 1 bijop tellen zodat je party overeenkomst met het aantal spelers.
-            Party.Size = Party.Selected + 1;
-
-            if (Party.Size == 1)
-            {
-                pictureBoxPlayers.Visible = false;
-                Player1Text.Visible = true;
-                Player1Text.BackColor = Color.Azure;
-                Player1Colour.Visible = true;
-                Player1Colour.BackColor = Color.Azure;
-                Player2Text.Visible = false;
-                Player2Colour.Visible = false;
-                Player3Text.Visible = false;
-                Player3Colour.Visible = false;
-                Player4Text.Visible = false;
-                Player4Colour.Visible = false;
-                Player1radioButton.Visible = true;
-                Player1radioButton.BackColor = Color.Azure;
-                Player2radioButton.Visible = false;
-                Player3radioButton.Visible = false;
-                Player4radioButton.Visible = false;
-                Player1EndscoreLabel.Visible = true;
-                Player1EndscoreLabel.BackColor = Color.Azure;
-                Player2EndscoreLabel.Visible = false;
-                Player2.Name = " ";
-                Player3EndscoreLabel.Visible = false;
-                Player3.Name = " ";
-                Player4EndscoreLabel.Visible = false;
-                Player4.Name = " ";
-            }
-
-            else if (Party.Size == 2)
-            {
-                pictureBoxPlayers.Visible = false;
-                Player1Text.Visible = true;
-                Player1Text.BackColor = Color.Azure;
-                Player1Colour.Visible = true;
-                Player1Colour.BackColor = Color.Azure;
-                Player2Text.Visible = true;
-                Player2Text.BackColor = Color.Azure;
-                Player2Colour.Visible = true;
-                Player2Colour.BackColor = Color.Azure;
-                Player3Text.Visible = false;
-                Player3Colour.Visible = false;
-                Player4Text.Visible = false;
-                Player4Colour.Visible = false;
-                Player1radioButton.Visible = true;
-                Player1radioButton.BackColor = Color.Azure;
-                Player2radioButton.Visible = true;
-                Player2radioButton.BackColor = Color.Azure;
-                Player3radioButton.Visible = false;
-                Player4radioButton.Visible = false;
-                Player1EndscoreLabel.Visible = true;
-                Player1EndscoreLabel.BackColor = Color.Azure;
-                Player2EndscoreLabel.Visible = true;
-                Player2EndscoreLabel.BackColor = Color.Azure;
-                Player3EndscoreLabel.Visible = false;
-                Player3.Name = " ";
-                Player4EndscoreLabel.Visible = false;
-                Player4.Name = " ";
-
-            }
-
-            else if (Party.Size == 3)
-            {
-                pictureBoxPlayers.Visible = false;
-                Player1Text.Visible = true;
-                Player1Text.BackColor = Color.Azure;
-                Player1Colour.Visible = true;
-                Player1Colour.BackColor = Color.Azure;
-                Player2Text.Visible = true;
-                Player2Text.BackColor = Color.Azure;
-                Player2Colour.Visible = true;
-                Player2Colour.BackColor = Color.Azure;
-                Player3Text.Visible = true;
-                Player3Text.BackColor = Color.Azure;
-                Player3Colour.Visible = true;
-                Player3Colour.BackColor = Color.Azure;
-                Player4Text.Visible = false;
-                Player4Colour.Visible = false;
-                Player1radioButton.Visible = true;
-                Player1radioButton.BackColor = Color.Azure;
-                Player2radioButton.Visible = true;
-                Player2radioButton.BackColor = Color.Azure;
-                Player3radioButton.Visible = true;
-                Player3radioButton.BackColor = Color.Azure;
-                Player4radioButton.Visible = false;
-                Player1EndscoreLabel.Visible = true;
-                Player1EndscoreLabel.BackColor = Color.Azure;
-                Player2EndscoreLabel.Visible = true;
-                Player2EndscoreLabel.BackColor = Color.Azure;
-                Player3EndscoreLabel.Visible = true;
-                Player3EndscoreLabel.BackColor = Color.Azure;
-                Player4EndscoreLabel.Visible = false;
-                Player4.Name = " ";
-
-            }
-
-            else if (Party.Size >= 4)
-            {
-                pictureBoxPlayers.Visible = false;
-                Player1Text.Visible = true;
-                Player1Text.BackColor = Color.Azure;
-                Player1Colour.Visible = true;
-                Player1Colour.BackColor = Color.Azure;
-                Player2Text.Visible = true;
-                Player2Text.BackColor = Color.Azure;
-                Player2Colour.Visible = true;
-                Player2Colour.BackColor = Color.Azure;
-                Player3Text.Visible = true;
-                Player3Text.BackColor = Color.Azure;
-                Player3Colour.Visible = true;
-                Player3Colour.BackColor = Color.Azure;
-                Player4Text.Visible = true;
-                Player4Text.BackColor = Color.Azure;
-                Player4Colour.Visible = true;
-                Player4Colour.BackColor = Color.Azure;
-                Player1radioButton.Visible = true;
-                Player1radioButton.BackColor = Color.Azure;
-                Player2radioButton.Visible = true;
-                Player2radioButton.BackColor = Color.Azure;
-                Player3radioButton.Visible = true;
-                Player3radioButton.BackColor = Color.Azure;
-                Player4radioButton.Visible = true;
-                Player4radioButton.BackColor = Color.Azure;
-                Player1EndscoreLabel.Visible = true;
-                Player1EndscoreLabel.BackColor = Color.Azure;
-                Player2EndscoreLabel.Visible = true;
-                Player2EndscoreLabel.BackColor = Color.Azure;
-                Player3EndscoreLabel.Visible = true;
-                Player3EndscoreLabel.BackColor = Color.Azure;
-                Player4EndscoreLabel.Visible = true;
-                Player4EndscoreLabel.BackColor = Color.Azure;
-            }
-        }
-
-
+         
 
         #region Player1 input
         private void Player1Text_TextChanged(object sender, EventArgs e)
@@ -433,13 +462,11 @@ namespace Odin_Scores
         
         private void ShipsBoxP1_TextChanged(Object sender, EventArgs e)
         {
-            
-            Player1.Ships = Convert.ToInt32(this.ShipsBoxP1.Text);
-            
+            Player1.Ships = Convert.ToInt32(ShipsBoxP1.Text);
         }
         private void EmigrationBoxP1_TextChanged(Object sender, EventArgs e)
         {
-            Player1.Emigration = Convert.ToInt32(this.EmigrationBoxP1.Text);
+            Player1.Emigration = Convert.ToInt32(EmigrationBoxP1.Text);
         }
         private void ExplorationBoardsPBoxP1_TextChanged(Object sender, EventArgs e)
         {
@@ -625,7 +652,7 @@ namespace Odin_Scores
         }
         private void HomeBoardBoxP2_TextChanged(Object sender, EventArgs e)
         {
-            Player4.HomeBoard = Convert.ToInt32(HomeBoardBoxP2.Text);
+            Player2.HomeBoard = Convert.ToInt32(HomeBoardBoxP2.Text);
         }
         private void ExplorationBoardsNBoxP2_TextChanged(Object sender, EventArgs e)
         {
@@ -753,52 +780,51 @@ namespace Odin_Scores
 
         private void ShipsBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.Ships = Convert.ToInt32(ShipsBoxP3);
+            Player3.Ships = Convert.ToInt32(ShipsBoxP3.Text);
         }
         private void EmigrationBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.Emigration = Convert.ToInt32(EmigrationBoxP3);
+            Player3.Emigration = Convert.ToInt32(EmigrationBoxP3.Text);
         }
         private void ExplorationBoardsPBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.ExplorationP = Convert.ToInt32(ExplorationBoardsPBoxP3);
+            Player3.ExplorationP = Convert.ToInt32(ExplorationBoardsPBoxP3.Text);
         }
         private void ShedsHousesPBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.ShedsHousesP = Convert.ToInt32(ShedsHousesPBoxP3);
+            Player3.ShedsHousesP = Convert.ToInt32(ShedsHousesPBoxP3.Text);
         }
         private void SheepCattleBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.SheepCattle = Convert.ToInt32(SheepCattleBoxP3);
+            Player3.SheepCattle = Convert.ToInt32(SheepCattleBoxP3.Text);
         }
         private void OccupationsBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.Occupations = Convert.ToInt32(OccupationsBoxP3);
+            Player3.Occupations = Convert.ToInt32(OccupationsBoxP3.Text);
         }
         private void SilverBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.Silver = Convert.ToInt32(SilverBoxP3);
+            Player3.Silver = Convert.ToInt32(SilverBoxP3.Text);
         }
         private void FinalIncomeBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.FinalIncome = Convert.ToInt32(FinalIncomeBoxP3);
+            Player3.FinalIncome = Convert.ToInt32(FinalIncomeBoxP3.Text);
         }
         private void HomeBoardBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.HomeBoard = Convert.ToInt32(HomeBoardBoxP3);
+            Player3.HomeBoard = Convert.ToInt32(HomeBoardBoxP3.Text);
         }
         private void ExplorationBoardsNBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.ExplorationN = Convert.ToInt32(ExplorationBoardsNBoxP3);
+            Player3.ExplorationN = Convert.ToInt32(ExplorationBoardsNBoxP3.Text);
         }
         private void ShedsHousesNBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.ShedsHousesN = Convert.ToInt32(ShedsHousesNBoxP3);
+            Player3.ShedsHousesN = Convert.ToInt32(ShedsHousesNBoxP3.Text);
         }
         private void ThingPenaltyBoxP3_TextChanged(Object sender, EventArgs e)
         {
-            Player3.ThingPenalty = Convert.ToInt32(ThingPenaltyBoxP3);
-
+            Player3.ThingPenalty = Convert.ToInt32(ThingPenaltyBoxP3.Text);
         }
         private void EnglishCrownBoxP3_CheckedChanged(Object sender, EventArgs e)
         {
