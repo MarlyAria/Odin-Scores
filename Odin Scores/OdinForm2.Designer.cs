@@ -131,7 +131,7 @@
             // Player1radioButton
             // 
             this.Player1radioButton.AutoSize = true;
-            this.Player1radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player1radioButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.Player1radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1radioButton.ForeColor = System.Drawing.Color.Black;
             this.Player1radioButton.Location = new System.Drawing.Point(60, 40);
@@ -147,7 +147,7 @@
             // Player2radioButton
             // 
             this.Player2radioButton.AutoSize = true;
-            this.Player2radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player2radioButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.Player2radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2radioButton.ForeColor = System.Drawing.Color.Red;
             this.Player2radioButton.Location = new System.Drawing.Point(60, 85);
@@ -163,7 +163,7 @@
             // Player3radioButton
             // 
             this.Player3radioButton.AutoSize = true;
-            this.Player3radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player3radioButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.Player3radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player3radioButton.ForeColor = System.Drawing.Color.Blue;
             this.Player3radioButton.Location = new System.Drawing.Point(300, 40);
@@ -179,7 +179,7 @@
             // Player4radioButton
             // 
             this.Player4radioButton.AutoSize = true;
-            this.Player4radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player4radioButton.BackColor = System.Drawing.Color.PaleTurquoise;
             this.Player4radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player4radioButton.ForeColor = System.Drawing.Color.Yellow;
             this.Player4radioButton.Location = new System.Drawing.Point(300, 85);
@@ -606,8 +606,8 @@
             // 
             this.Player1EndscoreLabel.AutoSize = true;
             this.Player1EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player1EndscoreLabel.ForeColor = System.Drawing.Color.Black;
             this.Player1EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1EndscoreLabel.ForeColor = System.Drawing.Color.Black;
             this.Player1EndscoreLabel.Location = new System.Drawing.Point(189, 130);
             this.Player1EndscoreLabel.Name = "Player1EndscoreLabel";
             this.Player1EndscoreLabel.Size = new System.Drawing.Size(301, 37);
@@ -618,8 +618,8 @@
             // 
             this.Player2EndscoreLabel.AutoSize = true;
             this.Player2EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player2EndscoreLabel.ForeColor = System.Drawing.Color.Red;
             this.Player2EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2EndscoreLabel.ForeColor = System.Drawing.Color.Red;
             this.Player2EndscoreLabel.Location = new System.Drawing.Point(189, 205);
             this.Player2EndscoreLabel.Name = "Player2EndscoreLabel";
             this.Player2EndscoreLabel.Size = new System.Drawing.Size(303, 37);
@@ -630,8 +630,8 @@
             // 
             this.Player3EndscoreLabel.AutoSize = true;
             this.Player3EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player3EndscoreLabel.ForeColor = System.Drawing.Color.Blue;
             this.Player3EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3EndscoreLabel.ForeColor = System.Drawing.Color.Blue;
             this.Player3EndscoreLabel.Location = new System.Drawing.Point(186, 267);
             this.Player3EndscoreLabel.Name = "Player3EndscoreLabel";
             this.Player3EndscoreLabel.Size = new System.Drawing.Size(304, 37);
@@ -642,8 +642,8 @@
             // 
             this.Player4EndscoreLabel.AutoSize = true;
             this.Player4EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
-            this.Player4EndscoreLabel.ForeColor = System.Drawing.Color.Yellow;
             this.Player4EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4EndscoreLabel.ForeColor = System.Drawing.Color.Yellow;
             this.Player4EndscoreLabel.Location = new System.Drawing.Point(189, 325);
             this.Player4EndscoreLabel.Name = "Player4EndscoreLabel";
             this.Player4EndscoreLabel.Size = new System.Drawing.Size(306, 37);
@@ -1033,7 +1033,7 @@
             // pictureBoxForm
             // 
             this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxForm.Location = new System.Drawing.Point(12, 10);
+            this.pictureBoxForm.Location = new System.Drawing.Point(12, 11);
             this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxForm.Name = "pictureBoxForm";
             this.pictureBoxForm.Size = new System.Drawing.Size(925, 768);
