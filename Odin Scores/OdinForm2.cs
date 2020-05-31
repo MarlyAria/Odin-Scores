@@ -178,19 +178,19 @@ namespace Odin_Scores
             PlayerNumberBox.Visible = false;
             PlayerNumberLabel.Visible = false;
 
-            if (party.Size==2)
+            if (party.Size == 2)
             {
                 string[] StartingPlayerArray = { Player1.Name, Player2.Name};
                 StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
                 MessageBox.Show(StartingPlayerArray[0] + " has been to chosen to start the feast", "Odin's Choice");
             }
-            if (party.Size == 3)
+            else if (party.Size == 3)
             {
                 string[] StartingPlayerArray = { Player1.Name, Player2.Name, Player3.Name};
                 StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
                 MessageBox.Show(StartingPlayerArray[0] + " has been to chosen to start the feast", "Odin's Choice");
             }
-            if (party.Size == 4)
+             else if (party.Size == 4)
             {
                 string[] StartingPlayerArray = { Player1.Name, Player2.Name, Player3.Name, Player4.Name };
                 StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
@@ -288,6 +288,7 @@ namespace Odin_Scores
             #endregion
 
             #region Labels en boxen wegwerken
+            
             Player1radioButton.Visible = false;
             Player2radioButton.Visible = false;
             Player3radioButton.Visible = false;
@@ -323,7 +324,6 @@ namespace Odin_Scores
             ThingPenaltyBoxP4.Visible = false;
             pictureBoxForm.Visible = false;
             EnglishCrownBoxP4.Visible = false;
-            pictureBoxRadioButtons.Visible = false;
             pictureBoxEndscore.Visible = false;
             ShipsBoxP2.Visible = false;
             EmigrationBoxP2.Visible = false;
@@ -393,18 +393,15 @@ namespace Odin_Scores
                 Player1radioButton.ForeColor = Color.Red;
                
             }
-            else if (Player1.Colour == "Blue")
+            if (Player1.Colour == "Blue")
             {
                 Player1radioButton.ForeColor = Color.Blue;
             }
-            else if (Player1.Colour == "Yellow")
+            if (Player1.Colour == "Yellow")
             {
                 Player1radioButton.ForeColor = Color.Yellow;
             }
-            else
-            {
-                Player1radioButton.ForeColor = Color.Black;
-            }
+          
         }
         private void Player1radioButton_Checked(object sender, EventArgs e)
         {
@@ -548,22 +545,19 @@ namespace Odin_Scores
         {
             Player2.Colour = Player2Colour.SelectedItem.ToString();
 
-            if (Player2.Colour == "Red")
-            {
-                Player2radioButton.ForeColor = Color.Red;
-            }
-            else if (Player2.Colour == "Blue")
-            {
-                Player2radioButton.ForeColor = Color.Blue;
-            }
-            else if (Player2.Colour == "Yellow")
-            {
-                Player2radioButton.ForeColor = Color.Yellow;
-            }
-            else
+            if (Player2.Colour == "Black")
             {
                 Player2radioButton.ForeColor = Color.Black;
             }
+            if (Player2.Colour == "Blue")
+            {
+                Player2radioButton.ForeColor = Color.Blue;
+            }
+            if (Player2.Colour == "Yellow")
+            {
+                Player2radioButton.ForeColor = Color.Yellow;
+            }
+           
         }
         private void Player2radioButton_Checked(object sender, EventArgs e)
         {
@@ -710,18 +704,15 @@ namespace Odin_Scores
             {
                 Player3radioButton.ForeColor = Color.Red;
             }
-            else if (Player3.Colour == "Blue")
-            {
-                Player3radioButton.ForeColor = Color.Blue;
-            }
-            else if (Player3.Colour == "Yellow")
-            {
-                Player3radioButton.ForeColor = Color.Yellow;
-            }
-            else
+            if (Player3.Colour == "Black")
             {
                 Player3radioButton.ForeColor = Color.Black;
             }
+            if (Player3.Colour == "Yellow")
+            {
+                Player3radioButton.ForeColor = Color.Yellow;
+            }
+          
         }
         private void Player3radioButton_Checked(object sender, EventArgs e)
         {
@@ -869,15 +860,11 @@ namespace Odin_Scores
             {
                 Player4radioButton.ForeColor = Color.Red;
             }
-            else if (Player4.Colour == "Blue")
+            if (Player4.Colour == "Blue")
             {
                 Player1radioButton.ForeColor = Color.Blue;
             }
-            else if (Player4.Colour == "Yellow")
-            {
-                Player4radioButton.ForeColor = Color.Yellow;
-            }
-            else
+            if (Player4.Colour == "Black")
             {
                 Player4radioButton.ForeColor = Color.Black;
             }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OdinForm));
             this.Player1radioButton = new System.Windows.Forms.RadioButton();
             this.Player2radioButton = new System.Windows.Forms.RadioButton();
             this.Player3radioButton = new System.Windows.Forms.RadioButton();
@@ -118,13 +119,11 @@
             this.StartButton = new System.Windows.Forms.Button();
             this.pictureBoxForm = new System.Windows.Forms.PictureBox();
             this.ScoreButton = new System.Windows.Forms.Button();
-            this.pictureBoxRadioButtons = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxEndscore = new System.Windows.Forms.PictureBox();
             this.labelWatTeDoen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlayers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRadioButtons)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEndscore)).BeginInit();
             this.SuspendLayout();
@@ -132,12 +131,13 @@
             // Player1radioButton
             // 
             this.Player1radioButton.AutoSize = true;
-            this.Player1radioButton.BackColor = System.Drawing.Color.White;
-            this.Player1radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player1radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player1radioButton.ForeColor = System.Drawing.Color.Black;
             this.Player1radioButton.Location = new System.Drawing.Point(60, 40);
             this.Player1radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player1radioButton.Name = "Player1radioButton";
-            this.Player1radioButton.Size = new System.Drawing.Size(93, 22);
+            this.Player1radioButton.Size = new System.Drawing.Size(139, 34);
             this.Player1radioButton.TabIndex = 0;
             this.Player1radioButton.TabStop = true;
             this.Player1radioButton.Text = "Player 1";
@@ -147,12 +147,13 @@
             // Player2radioButton
             // 
             this.Player2radioButton.AutoSize = true;
-            this.Player2radioButton.BackColor = System.Drawing.Color.White;
-            this.Player2radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player2radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player2radioButton.ForeColor = System.Drawing.Color.Red;
             this.Player2radioButton.Location = new System.Drawing.Point(60, 85);
             this.Player2radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player2radioButton.Name = "Player2radioButton";
-            this.Player2radioButton.Size = new System.Drawing.Size(94, 22);
+            this.Player2radioButton.Size = new System.Drawing.Size(140, 34);
             this.Player2radioButton.TabIndex = 1;
             this.Player2radioButton.TabStop = true;
             this.Player2radioButton.Text = "Player 2";
@@ -162,12 +163,13 @@
             // Player3radioButton
             // 
             this.Player3radioButton.AutoSize = true;
-            this.Player3radioButton.BackColor = System.Drawing.Color.White;
-            this.Player3radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player3radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player3radioButton.ForeColor = System.Drawing.Color.Blue;
             this.Player3radioButton.Location = new System.Drawing.Point(300, 40);
             this.Player3radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player3radioButton.Name = "Player3radioButton";
-            this.Player3radioButton.Size = new System.Drawing.Size(94, 22);
+            this.Player3radioButton.Size = new System.Drawing.Size(141, 34);
             this.Player3radioButton.TabIndex = 2;
             this.Player3radioButton.TabStop = true;
             this.Player3radioButton.Text = "Player 3";
@@ -177,12 +179,13 @@
             // Player4radioButton
             // 
             this.Player4radioButton.AutoSize = true;
-            this.Player4radioButton.BackColor = System.Drawing.Color.White;
-            this.Player4radioButton.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4radioButton.BackColor = System.Drawing.Color.Transparent;
+            this.Player4radioButton.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Player4radioButton.ForeColor = System.Drawing.Color.Yellow;
             this.Player4radioButton.Location = new System.Drawing.Point(300, 85);
             this.Player4radioButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4radioButton.Name = "Player4radioButton";
-            this.Player4radioButton.Size = new System.Drawing.Size(95, 22);
+            this.Player4radioButton.Size = new System.Drawing.Size(143, 34);
             this.Player4radioButton.TabIndex = 3;
             this.Player4radioButton.TabStop = true;
             this.Player4radioButton.Text = "Player 4";
@@ -588,7 +591,7 @@
             // 
             this.PlayerNumberLabel.AutoSize = true;
             this.PlayerNumberLabel.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayerNumberLabel.Location = new System.Drawing.Point(95, 40);
+            this.PlayerNumberLabel.Location = new System.Drawing.Point(108, 40);
             this.PlayerNumberLabel.Name = "PlayerNumberLabel";
             this.PlayerNumberLabel.Size = new System.Drawing.Size(655, 33);
             this.PlayerNumberLabel.TabIndex = 35;
@@ -997,9 +1000,9 @@
             // 
             // pictureBoxPlayers
             // 
-            this.pictureBoxPlayers.BackgroundImage = global::Odin_Scores.Properties.Resources.pic3214824;
+            this.pictureBoxPlayers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlayers.BackgroundImage")));
             this.pictureBoxPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxPlayers.Location = new System.Drawing.Point(31, 149);
+            this.pictureBoxPlayers.Location = new System.Drawing.Point(16, 227);
             this.pictureBoxPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxPlayers.Name = "pictureBoxPlayers";
             this.pictureBoxPlayers.Size = new System.Drawing.Size(862, 616);
@@ -1008,7 +1011,7 @@
             // 
             // StartButton
             // 
-            this.StartButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
+            this.StartButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("StartButton.BackgroundImage")));
             this.StartButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.StartButton.Location = new System.Drawing.Point(193, 491);
             this.StartButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1021,7 +1024,7 @@
             // pictureBoxForm
             // 
             this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxForm.Location = new System.Drawing.Point(16, 11);
+            this.pictureBoxForm.Location = new System.Drawing.Point(3, 13);
             this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxForm.Name = "pictureBoxForm";
             this.pictureBoxForm.Size = new System.Drawing.Size(925, 768);
@@ -1030,7 +1033,7 @@
             // 
             // ScoreButton
             // 
-            this.ScoreButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
+            this.ScoreButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ScoreButton.BackgroundImage")));
             this.ScoreButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ScoreButton.Location = new System.Drawing.Point(542, 13);
             this.ScoreButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1040,19 +1043,9 @@
             this.ScoreButton.UseVisualStyleBackColor = true;
             this.ScoreButton.Click += new System.EventHandler(this.ScoreButton_Click);
             // 
-            // pictureBoxRadioButtons
-            // 
-            this.pictureBoxRadioButtons.BackColor = System.Drawing.Color.MintCream;
-            this.pictureBoxRadioButtons.Location = new System.Drawing.Point(31, 29);
-            this.pictureBoxRadioButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBoxRadioButtons.Name = "pictureBoxRadioButtons";
-            this.pictureBoxRadioButtons.Size = new System.Drawing.Size(411, 98);
-            this.pictureBoxRadioButtons.TabIndex = 48;
-            this.pictureBoxRadioButtons.TabStop = false;
-            // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Odin_Scores.Properties.Resources.zm7690_boards_and_cards;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Location = new System.Drawing.Point(391, 465);
@@ -1174,7 +1167,6 @@
             this.Controls.Add(this.Player3radioButton);
             this.Controls.Add(this.Player2radioButton);
             this.Controls.Add(this.Player1radioButton);
-            this.Controls.Add(this.pictureBoxRadioButtons);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBoxEndscore);
             this.Controls.Add(this.Player3EndscoreLabel);
@@ -1186,7 +1178,6 @@
             this.Text = "Odin";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPlayers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRadioButtons)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxEndscore)).EndInit();
             this.ResumeLayout(false);
@@ -1243,7 +1234,6 @@
         private System.Windows.Forms.Label PlayerNumberLabel;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.PictureBox pictureBoxPlayers;
-        private System.Windows.Forms.PictureBox pictureBoxRadioButtons;
         private System.Windows.Forms.Label Player1EndscoreLabel;
         private System.Windows.Forms.Label Player2EndscoreLabel;
         private System.Windows.Forms.Label Player3EndscoreLabel;
