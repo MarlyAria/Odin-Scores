@@ -584,6 +584,7 @@
             "2",
             "3",
             "4"});
+            this.PlayerNumberBox.SelectedIndex = 1;
             this.PlayerNumberBox.Location = new System.Drawing.Point(387, 104);
             this.PlayerNumberBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PlayerNumberBox.Name = "PlayerNumberBox";
@@ -605,6 +606,7 @@
             // 
             this.Player1EndscoreLabel.AutoSize = true;
             this.Player1EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Player1EndscoreLabel.ForeColor = System.Drawing.Color.Black;
             this.Player1EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player1EndscoreLabel.Location = new System.Drawing.Point(189, 130);
             this.Player1EndscoreLabel.Name = "Player1EndscoreLabel";
@@ -616,6 +618,7 @@
             // 
             this.Player2EndscoreLabel.AutoSize = true;
             this.Player2EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Player2EndscoreLabel.ForeColor = System.Drawing.Color.Red;
             this.Player2EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player2EndscoreLabel.Location = new System.Drawing.Point(189, 205);
             this.Player2EndscoreLabel.Name = "Player2EndscoreLabel";
@@ -627,6 +630,7 @@
             // 
             this.Player3EndscoreLabel.AutoSize = true;
             this.Player3EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Player3EndscoreLabel.ForeColor = System.Drawing.Color.Blue;
             this.Player3EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player3EndscoreLabel.Location = new System.Drawing.Point(186, 267);
             this.Player3EndscoreLabel.Name = "Player3EndscoreLabel";
@@ -638,6 +642,7 @@
             // 
             this.Player4EndscoreLabel.AutoSize = true;
             this.Player4EndscoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.Player4EndscoreLabel.ForeColor = System.Drawing.Color.Yellow;
             this.Player4EndscoreLabel.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Player4EndscoreLabel.Location = new System.Drawing.Point(189, 325);
             this.Player4EndscoreLabel.Name = "Player4EndscoreLabel";
