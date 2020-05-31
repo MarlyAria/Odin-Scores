@@ -13,13 +13,13 @@ namespace Odin_Scores
     public partial class OdinForm : System.Windows.Forms.Form
     {
         // int voor het bepalen van de groote van de groep
-        party Party = new party();
+        Party party = new Party();
         Player Player1 = new Player();
         Player Player2 = new Player();
         Player Player3 = new Player();
         Player Player4 = new Player();
+        Random r = new Random();
 
-                       
         public OdinForm()
         {
             InitializeComponent();
@@ -29,13 +29,13 @@ namespace Odin_Scores
             Player4.Name = "Player 4";
         }
 
-        private void PlayerNumberBox_SelectedIndexChanged(object sender, EventArgs e)
+        public void PlayerNumberBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Party.Selected = Convert.ToInt16(PlayerNumberBox.SelectedIndex);
+            party.Selected = Convert.ToInt16(PlayerNumberBox.SelectedIndex);
             // Omdat de selectie een array is moet je er 1 bijop tellen zodat je party overeenkomst met het aantal spelers.
-            Party.Size = Party.Selected + 1;
+            party.Size = party.Selected + 1;
 
-            if (Party.Size == 1)
+            if (party.Size == 1)
             {
                 pictureBoxPlayers.Visible = false;
                 Player1Text.Visible = true;
@@ -60,7 +60,7 @@ namespace Odin_Scores
                 Player4EndscoreLabel.Visible = false;
             }
 
-            else if (Party.Size == 2)
+            else if (party.Size == 2)
             {
                 pictureBoxPlayers.Visible = false;
                 Player1Text.Visible = true;
@@ -89,7 +89,7 @@ namespace Odin_Scores
                 Player4EndscoreLabel.Visible = false;
             }
 
-            else if (Party.Size == 3)
+            else if (party.Size == 3)
             {
                 pictureBoxPlayers.Visible = false;
                 Player1Text.Visible = true;
@@ -122,7 +122,7 @@ namespace Odin_Scores
                 Player4EndscoreLabel.Visible = false;
             }
 
-            else if (Party.Size >= 4)
+            else if (party.Size >= 4)
             {
                 pictureBoxPlayers.Visible = false;
                 Player1Text.Visible = true;
@@ -157,6 +157,7 @@ namespace Odin_Scores
                 Player3EndscoreLabel.BackColor = Color.Azure;
                 Player4EndscoreLabel.Visible = true;
                 Player4EndscoreLabel.BackColor = Color.Azure;
+
             }
         }
 
@@ -176,12 +177,31 @@ namespace Odin_Scores
             StartButton.Visible = false;
             PlayerNumberBox.Visible = false;
             PlayerNumberLabel.Visible = false;
+
+            if (party.Size==2)
+            {
+                string[] StartingPlayerArray = { Player1.Name, Player2.Name};
+                StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
+                MessageBox.Show(StartingPlayerArray[0] + " has been to chosen to start the feast", "Odin's Choice");
+            }
+            if (party.Size == 3)
+            {
+                string[] StartingPlayerArray = { Player1.Name, Player2.Name, Player3.Name};
+                StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
+                MessageBox.Show(StartingPlayerArray[0] + " has been to chosen to start the feast", "Odin's Choice");
+            }
+            if (party.Size == 4)
+            {
+                string[] StartingPlayerArray = { Player1.Name, Player2.Name, Player3.Name, Player4.Name };
+                StartingPlayerArray = StartingPlayerArray.OrderBy(x => r.Next()).ToArray();
+                MessageBox.Show(StartingPlayerArray[0] + " has been to chosen to start the feast", "Odin's Choice");
+            }
         }
 
         public void ScoreButton_Click(object sender, EventArgs e)
         {
             #region Spelers uitrekenen
-            if (Party.Size == 1)
+            if (party.Size == 1)
             {
                 Player1.AddPlus();
                 Player1.AddMin();
@@ -190,7 +210,7 @@ namespace Odin_Scores
                 Player3.Endscore = -99999;
                 Player4.Endscore = -99999;
             }
-            if (Party.Size == 2)
+            if (party.Size == 2)
             {
                 Player1.AddPlus();
                 Player1.AddMin();
@@ -201,7 +221,7 @@ namespace Odin_Scores
                 Player3.Endscore = -99999;
                 Player4.Endscore = -99999;
             }
-            if (Party.Size == 3)
+            if (party.Size == 3)
             {
                 Player1.AddPlus();
                 Player1.AddMin();
@@ -214,7 +234,7 @@ namespace Odin_Scores
                 Player3.Totaal();
                 Player4.Endscore = -99999;
             }
-            if (Party.Size == 4)
+            if (party.Size == 4)
             {
                 Player1.AddPlus();
                 Player1.AddMin();

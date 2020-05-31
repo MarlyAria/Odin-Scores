@@ -1021,7 +1021,7 @@
             // pictureBoxForm
             // 
             this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxForm.Location = new System.Drawing.Point(16, 15);
+            this.pictureBoxForm.Location = new System.Drawing.Point(16, 11);
             this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxForm.Name = "pictureBoxForm";
             this.pictureBoxForm.Size = new System.Drawing.Size(925, 768);
@@ -1032,7 +1032,7 @@
             // 
             this.ScoreButton.BackgroundImage = global::Odin_Scores.Properties.Resources.odin_2;
             this.ScoreButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ScoreButton.Location = new System.Drawing.Point(558, 31);
+            this.ScoreButton.Location = new System.Drawing.Point(542, 13);
             this.ScoreButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ScoreButton.Name = "ScoreButton";
             this.ScoreButton.Size = new System.Drawing.Size(221, 132);
@@ -1086,7 +1086,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(1609, 752);
+            this.ClientSize = new System.Drawing.Size(949, 789);
             this.Controls.Add(this.pictureBoxPlayers);
             this.Controls.Add(this.labelPlayerSelect);
             this.Controls.Add(this.PlayerNumberBox);

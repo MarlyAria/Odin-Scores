@@ -7,18 +7,11 @@ using System.Windows.Forms;
 
 namespace Odin_Scores
 {
-    class party : Player
+    class Party : Player
     {
 
         public int Size;
         public int Selected;
-    
-       
-
-       
-
-
-
 
     }
 }

@@ -30,6 +30,7 @@
         {
             this.VikingControl = new System.Windows.Forms.TabControl();
             this.tabViking1Red = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.labelNegativePoints1 = new System.Windows.Forms.Label();
             this.ThingPenaltyBoxP1 = new System.Windows.Forms.TextBox();
             this.ShedsHousesNBoxP1 = new System.Windows.Forms.TextBox();
@@ -58,6 +59,7 @@
             this.labelEmigration1 = new System.Windows.Forms.Label();
             this.labelShips1 = new System.Windows.Forms.Label();
             this.tabViking2Black = new System.Windows.Forms.TabPage();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.labelNegativePoints2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -86,6 +88,7 @@
             this.labelEmigration2 = new System.Windows.Forms.Label();
             this.labelShips2 = new System.Windows.Forms.Label();
             this.tabViking3Blue = new System.Windows.Forms.TabPage();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.labelHousesN3 = new System.Windows.Forms.Label();
@@ -114,6 +117,7 @@
             this.labelShips3 = new System.Windows.Forms.Label();
             this.labelPositivePoints3 = new System.Windows.Forms.Label();
             this.tabViking4Yellow = new System.Windows.Forms.TabPage();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -142,10 +146,6 @@
             this.labelShips4 = new System.Windows.Forms.Label();
             this.labelPostivePoint4 = new System.Windows.Forms.Label();
             this.labelWatTeDoen = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.VikingControl.SuspendLayout();
             this.tabViking1Red.SuspendLayout();
             this.tabViking2Black.SuspendLayout();
@@ -163,7 +163,7 @@
             this.VikingControl.Location = new System.Drawing.Point(4, 76);
             this.VikingControl.Name = "VikingControl";
             this.VikingControl.SelectedIndex = 0;
-            this.VikingControl.Size = new System.Drawing.Size(1224, 708);
+            this.VikingControl.Size = new System.Drawing.Size(1224, 630);
             this.VikingControl.TabIndex = 0;
             // 
             // tabViking1Red
@@ -206,6 +206,15 @@
             this.tabViking1Red.Size = new System.Drawing.Size(1216, 663);
             this.tabViking1Red.TabIndex = 0;
             this.tabViking1Red.Text = "   Red Viking   ";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(350, 530);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 156;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // labelNegativePoints1
             // 
@@ -519,6 +528,15 @@
             this.tabViking2Black.TabIndex = 1;
             this.tabViking2Black.Text = "   Black Viking   ";
             // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(350, 530);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
+            this.checkBox2.TabIndex = 155;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
             // labelNegativePoints2
             // 
             this.labelNegativePoints2.AutoSize = true;
@@ -830,6 +848,15 @@
             this.tabViking3Blue.TabIndex = 2;
             this.tabViking3Blue.Text = "   Blue Viking   ";
             // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(350, 530);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(18, 17);
+            this.checkBox3.TabIndex = 156;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -1137,9 +1164,18 @@
             this.tabViking4Yellow.Font = new System.Drawing.Font("Ravie", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabViking4Yellow.Location = new System.Drawing.Point(4, 41);
             this.tabViking4Yellow.Name = "tabViking4Yellow";
-            this.tabViking4Yellow.Size = new System.Drawing.Size(1216, 663);
+            this.tabViking4Yellow.Size = new System.Drawing.Size(1216, 585);
             this.tabViking4Yellow.TabIndex = 3;
             this.tabViking4Yellow.Text = "   Yellow Viking   ";
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(350, 530);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(18, 17);
+            this.checkBox4.TabIndex = 156;
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // label14
             // 
@@ -1426,48 +1462,12 @@
             this.labelWatTeDoen.TabIndex = 7;
             this.labelWatTeDoen.Text = "Selected the player and then enter his scores in each box";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(350, 530);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox1.TabIndex = 156;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(350, 530);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(18, 17);
-            this.checkBox2.TabIndex = 155;
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(350, 530);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(18, 17);
-            this.checkBox3.TabIndex = 156;
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(350, 530);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(18, 17);
-            this.checkBox4.TabIndex = 156;
-            this.checkBox4.UseVisualStyleBackColor = true;
-            // 
             // NewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.ForestGreen;
-            this.ClientSize = new System.Drawing.Size(1227, 796);
+            this.ClientSize = new System.Drawing.Size(1227, 809);
             this.Controls.Add(this.labelWatTeDoen);
             this.Controls.Add(this.VikingControl);
             this.Name = "NewForm";
