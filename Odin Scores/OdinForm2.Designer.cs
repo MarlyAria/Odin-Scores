@@ -465,7 +465,7 @@
             // 
             this.labelPlayerSelect.AutoSize = true;
             this.labelPlayerSelect.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPlayerSelect.Location = new System.Drawing.Point(95, 204);
+            this.labelPlayerSelect.Location = new System.Drawing.Point(97, 184);
             this.labelPlayerSelect.Name = "labelPlayerSelect";
             this.labelPlayerSelect.Size = new System.Drawing.Size(655, 21);
             this.labelPlayerSelect.TabIndex = 45;
@@ -479,6 +479,7 @@
             "Blue",
             "Red",
             "Yellow"});
+            this.Player4Colour.SelectedIndex = 4;
             this.Player4Colour.Location = new System.Drawing.Point(562, 427);
             this.Player4Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4Colour.Name = "Player4Colour";
@@ -504,6 +505,7 @@
             "Blue",
             "Red",
             "Yellow"});
+            this.Player3Colour.SelectedIndex = 1;
             this.Player3Colour.Location = new System.Drawing.Point(562, 370);
             this.Player3Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player3Colour.Name = "Player3Colour";
@@ -529,6 +531,7 @@
             "Blue",
             "Red",
             "Yellow"});
+            this.Player2Colour.SelectedIndex = 2;
             this.Player2Colour.Location = new System.Drawing.Point(562, 322);
             this.Player2Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player2Colour.Name = "Player2Colour";
@@ -554,6 +557,7 @@
             "Blue",
             "Red",
             "Yellow"});
+            this.Player1Colour.SelectedIndex = 0;
             this.Player1Colour.Location = new System.Drawing.Point(562, 267);
             this.Player1Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player1Colour.Name = "Player1Colour";
@@ -1002,7 +1006,7 @@
             // 
             this.pictureBoxPlayers.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxPlayers.BackgroundImage")));
             this.pictureBoxPlayers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxPlayers.Location = new System.Drawing.Point(16, 227);
+            this.pictureBoxPlayers.Location = new System.Drawing.Point(29, 207);
             this.pictureBoxPlayers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxPlayers.Name = "pictureBoxPlayers";
             this.pictureBoxPlayers.Size = new System.Drawing.Size(862, 616);
@@ -1024,7 +1028,7 @@
             // pictureBoxForm
             // 
             this.pictureBoxForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxForm.Location = new System.Drawing.Point(3, 13);
+            this.pictureBoxForm.Location = new System.Drawing.Point(12, 10);
             this.pictureBoxForm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBoxForm.Name = "pictureBoxForm";
             this.pictureBoxForm.Size = new System.Drawing.Size(925, 768);
