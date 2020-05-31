@@ -479,7 +479,7 @@
             "Blue",
             "Red",
             "Yellow"});
-            this.Player4Colour.SelectedIndex = 4;
+            this.Player4Colour.SelectedIndex = 3;
             this.Player4Colour.Location = new System.Drawing.Point(562, 427);
             this.Player4Colour.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Player4Colour.Name = "Player4Colour";
